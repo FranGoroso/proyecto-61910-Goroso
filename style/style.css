@@ -99,6 +99,27 @@ img {
 
 /*Fin de PRIMERA SECCION (Desktop)*/
 
+
+/*SEPARADOR (Mobile)*/
+.separador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    background-color: lightsalmon;
+    justify-content: center;
+    align-items: center;
+}
+
+.separador_contacto {
+    color: white;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/*Fin de separador (Mobile)*/
+
+
 /*SEGUNDA SECCION (mobile)*/
 
 .segunda_seccion_index {
@@ -155,3 +176,21 @@ img {
 }
 
 /*Fin de SEGUNDA SECCION (Desktop)*/
+
+
+/*TERCERA SECCION (Mobile)*/
+
+.tercera_seccion_index {
+    display: flex;
+    flex-direction: column;
+    background-color: #c2c2c2;
+    align-items: center;
+    height: 70vh;
+}
+
+.iconos_tecnologias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
