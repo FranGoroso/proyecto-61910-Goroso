@@ -19,7 +19,7 @@ img {
 }
 /*FIN de reseteo manual de css*/
 
-/*PRIMERA SECCION*/
+/*PRIMERA SECCION (mobile)*/
 
 .primera_seccion_index {
     display: flex;
@@ -54,4 +54,36 @@ img {
     width: 7rem;
     border-radius: 10px;
     justify-content: center;
+}
+/*Fin de PRIMERA SECCION (mobile)*/
+
+/*PRIMERA SECCION (Desktop)*/
+
+@media (min-width: 768px) {
+    
+    .primera_seccion_index {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". titulo_primera_seccion ."
+        ". subtitulo_primera_seccion ."
+        ". parrafo_primera_seccion ."
+        ". boton_primera_seccion ."
+        ;
+        justify-items: center;
+    }
+
+    .titulo_primera_seccion{
+        grid-area: titulo_primera_seccion;
+    }
+    .subtitulo_primera_seccion{
+        grid-area: subtitulo_primera_seccion;
+    }
+    .parrafo_primera_seccion{
+        grid-area: parrafo_primera_seccion;
+    }
+    .boton_primera_seccion{
+        grid-area: boton_primera_seccion;
+    }
 }
