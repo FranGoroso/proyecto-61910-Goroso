@@ -1,0 +1,27 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: red;
+}
+
+p {
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+.imagenesGenerales {
+    width: 100px;
+    height: 100px;
+}
+
+#programando {
+    width: 100px;
+    height: 110px;
+}
+
+h4 {
+    color: white;
+    background-color: black;
+}
