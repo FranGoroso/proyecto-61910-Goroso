@@ -18,3 +18,40 @@ img {
     max-width: 100%;
 }
 /*FIN de reseteo manual de css*/
+
+/*PRIMERA SECCION*/
+
+.primera_seccion_index {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem;
+    background-image: url(../img/persona_programando.jpg);
+    background-size: cover;
+    height: 60vh;
+    background-position: center;
+    align-items: center;
+}
+
+.titulo_primera_seccion {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+}
+
+.subtitulo_primera_seccion {
+    color: white;
+    text-align: center;
+}
+
+.parrafo_primera_seccion {
+    color: white;
+    text-align: center;
+}
+
+.boton_primera_seccion {
+    height: 2rem;
+    width: 7rem;
+    border-radius: 10px;
+    justify-content: center;
+}
