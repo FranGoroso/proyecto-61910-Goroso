@@ -1,27 +1,20 @@
-h1 {
-    color: blue;
+/*RESETEO MANUAL DE CSS*/ 
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: 0;
 }
 
-h2 {
-    color: red;
+ul, ol {
+    list-style: none;
 }
 
-p {
-    text-align: justify;
-    text-transform: capitalize;
+a {
+    text-decoration: none;
 }
 
-.imagenesGenerales {
-    width: 100px;
-    height: 100px;
+img {
+    max-width: 100%;
 }
-
-#programando {
-    width: 100px;
-    height: 110px;
-}
-
-h4 {
-    color: white;
-    background-color: black;
-}
+/*FIN de reseteo manual de css*/
