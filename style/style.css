@@ -28,6 +28,14 @@ img {
     align-self: center;
 }
 
+.seccion_centrada {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 /*PRIMERA SECCION (mobile)*/
 
 .primera_seccion_index {
@@ -180,7 +188,7 @@ img {
 
 /*TERCERA SECCION (Mobile)*/
 
-.tercera_seccion_index {
+.contenedor {
     display: flex;
     flex-direction: column;
     background-color: #c2c2c2;
@@ -190,7 +198,62 @@ img {
 
 .iconos_tecnologias {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    justify-items: center;
+    align-items: center;
 }
 
+.tercer_subtitulo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.iconos_tecnologias {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+/*Fin de TERCERA SECCION (Mobile)*/
+
+/*TERCERA SECCION (Desktop)*/
+
+@media(min-width: 768px) {
+    .tercera_seccion_index {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10vw auto;
+        grid-template-areas:
+        "tercer_subtitulo tercer_subtitulo"
+        "iconos_tecnologias tercer_parrafo";
+        ;
+        justify-items: center;
+        align-items: center;
+        height: 50vh;
+    }
+    
+    .tercer_subtitulo {
+        grid-area: tercer_subtitulo;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .tercer_parrafo {
+        grid-area: tercer_parrafo;
+    }
+
+    .iconos_tecnologias {
+        grid-area: iconos_tecnologias;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        /*AQUI QUIERO HACER UNA ANIMACION QUE SE VEA BIEN Y OCUPE TODO
+        EL ESPACIO NECESARIO PARA UNA BUENA PRESENTACION*/
+    }
+    
+    .tercer_parrafo {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+/*Fin de TERCERA SECCION (Desktop)*/
