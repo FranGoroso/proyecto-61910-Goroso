@@ -257,3 +257,121 @@ img {
 }
 
 /*Fin de TERCERA SECCION (Desktop)*/
+
+/*CUARTA SECCION (mobile)*/
+
+.cuarta_seccion_index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 1fr 1fr 1fr;
+    grid-template-areas: 
+    "cuarto_subtitulo cuarto_subtitulo"
+    "uno dos"
+    "tres cuatro"
+    "cinco cinco"
+    ;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.cuarto_subtitulo {
+    text-align: center;
+    grid-area: cuarto_subtitulo;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.uno {
+    grid-area: uno;
+    background-image: url(../img/1-circle-fill.svg);
+    background-size: 8rem;
+    height: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 30px;
+}
+
+.dos {
+    grid-area: dos;
+    background-image: url(../img/2-circle-fill.svg);
+    background-size: 8rem;
+    height: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 30px;
+}
+
+.tres {
+    grid-area: tres;
+    background-image: url(../img/3-circle-fill.svg);
+    background-size: 8rem;
+    height: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 30px;
+}
+
+.cuatro {
+    grid-area: cuatro;
+    background-image: url(../img/4-circle-fill.svg);
+    background-size: 8rem;
+    height: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 30px;
+}
+
+.cinco {
+    grid-area: cinco;
+    display: flex;
+    background-image: url(../img/5-circle-fill.svg);
+    background-size: 8rem;
+    height: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+
+/*Fin de CUARTA SECCION (Mobile)*/
+
+/*CUARTA SECCION (Desktop)*/
+
+/*Fin CUARTA SECCION (Desktop)*/
+
+/*FOOTER (Mobile)*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_footer {
+    padding-bottom: 30px;
+}
+
+
+.iconos_footer {
+    display: flex;
+    gap: 20px;
+    padding:15px 0px 15px 0px;
+}
+
+.seccion_contacto_footer {
+    display: flex;
+    gap: 80px;
+}
+
+/*Fin de FOOTER (Mobile)*/
