@@ -589,3 +589,77 @@ FALTA:
     text-align: center;
 }
 
+/*Fin de SERVICIO WORDPRESS (Mobile)*/
+
+
+/*---------------------------------------------CONTACTO---------------------------------------------*/
+
+
+/*TITULO Y FORMULARIO*/
+
+.titulo_contacto {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.formulario_de_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+
+.nombre_y_apellido {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.correo_electronico {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.asunto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.cuadro_de_texto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.novedades {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.boton_formulario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.novedades {
+    display: flex;
+    flex-direction: column;
+}
+
+.casilla_de_marcado {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+.mapa{
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
