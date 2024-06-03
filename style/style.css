@@ -513,3 +513,79 @@ FALTA:
 
 
 */
+
+
+/*---------------------------------------------SERVICIOS---------------------------------------------*/
+
+/*PORTADA (Mobile)*/
+
+.portada_servicios {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../Img/portada_servicios.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_servicios {
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+/*Fin de PORTADA (Mobile)*/
+
+/*************************************************************************************************/
+
+/*SERVICIO CODIGO (Mobile)*/
+.servicio_codigo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    background-color: #c2c2c2;
+    margin: 100px 25px 100px 25px;
+    border-radius: 5%;
+}
+
+
+.subtitulo_desarrollo_codigo {
+    text-align: center;
+}
+
+.img_desarrollo_codigo {
+    justify-content: center;
+}
+
+.parrafo_desarrollo_codigo {
+    text-align: center;
+}
+
+/*SERVICIO WORDPRESS (Mobile)*/
+
+.servicio_wordpress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    background-color: #c2c2c2;
+    margin: 100px 25px 100px 25px;
+    border-radius: 5%;
+}
+
+.subtitulo_desarrollo_wordpress {
+    text-align: center;
+}
+
+.img_servicio_wordpress {
+    justify-content: center;
+}
+
+.parrafo_servicio_wordpress {
+    text-align: center;
+}
+
