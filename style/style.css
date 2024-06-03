@@ -36,6 +36,9 @@ img {
     padding-left: 10px;
 }
 
+
+/*************************************************************************************************/
+
 /*PRIMERA SECCION (mobile)*/
 
 .primera_seccion_index {
@@ -108,6 +111,8 @@ img {
 /*Fin de PRIMERA SECCION (Desktop)*/
 
 
+/*************************************************************************************************/
+
 /*SEPARADOR (Mobile)*/
 .separador {
     display: flex;
@@ -126,6 +131,8 @@ img {
     margin-right: 50px;
 }
 /*Fin de separador (Mobile)*/
+
+/*************************************************************************************************/
 
 
 /*SEGUNDA SECCION (mobile)*/
@@ -184,6 +191,8 @@ img {
 }
 
 /*Fin de SEGUNDA SECCION (Desktop)*/
+
+/*************************************************************************************************/
 
 
 /*TERCERA SECCION (Mobile)*/
@@ -257,6 +266,10 @@ img {
 }
 
 /*Fin de TERCERA SECCION (Desktop)*/
+
+
+/*************************************************************************************************/
+
 
 /*CUARTA SECCION (mobile)*/
 
@@ -347,7 +360,12 @@ img {
 
 /*Fin CUARTA SECCION (Desktop)*/
 
-/*FOOTER (Mobile)*/
+
+/*************************************************************************************************/
+
+
+
+/*----------------------------------------------FOOTER (Mobile)----------------------------------------------*/
 
 .footer {
     display: flex;
@@ -374,4 +392,124 @@ img {
     gap: 80px;
 }
 
-/*Fin de FOOTER (Mobile)*/
+/*----------------------------------------------Fin de FOOTER (Mobile)----------------------------------------------*/
+
+
+
+
+
+
+
+/*---------------------------------------------SOBRE MI---------------------------------------------*/
+
+/*PRIMERA SECCION: SOBRE MI (Mobile)*/
+
+.primera_seccion_sobre_mi {
+    position: relative; /* Para posicionar pseudo-elementos absolutamente dentro de esta sección */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000; /* Color del texto */
+    z-index: 1;
+    overflow: hidden; /* Asegura que los pseudo-elementos no se desborden */
+}
+
+.primera_seccion_sobre_mi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: orange; /* Color de la parte inferior */
+    clip-path: polygon(0 0, 100% 0, 0% 40%, 0 50%);
+    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+}
+
+.primera_seccion_sobre_mi::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Color de la parte superior */
+    clip-path: polygon(0 0, 100% 0, 0 50%, 0 100%);
+    z-index: -2; /* Asegura que esté detrás del otro pseudo-elemento */
+}
+
+ .foto_perfil { /*COLOCAR ESTILOS PARA NO ESTIRAR IMAGEN*/
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+ }
+
+ .titulo_primera_seccion_sobre_mi {
+    justify-content: center;
+    text-align: center;
+    padding-top: 2vh;
+ }
+
+ .subtitulo_primera_seccion_sobre_mi {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2vh;
+ }
+
+ .contenedor_img_boton_sobre_mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+ }
+
+
+/*Fin de PRIMERA SECCION: SOBRE MI (Mobile)*/
+
+
+/*************************************************************************************************/
+
+
+/*SEGUNDA SECCION: SOBRE MI (Mobile)*/
+ .segunda_seccion_sobre_mi {
+    display: flex;
+    background-color: white;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+ }
+
+ .contenedor_segunda_seccion_sobre_mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .parrafo_segunda_seccion_sobre_mi {
+    text-align: center;
+ }
+/*Fin de SEGUNDA SECCION: SOBRE MI (Mobile)*/
+ 
+
+/*************************************************************************************************/
+
+
+/*
+
+FALTA: 
+
+-Sobre mi: Corregir deperfectos en mobile y hacer la version DESKTOP
+-Sobre mi: Colocar iconos debajo del boton de enviar mail
+-Sobre mi: Ver bien la seccion 1 de sobre mi por el tema de diseño de fondo partido naranja. -> CHEQUEAR QUE ESTE TODO OK
+
+-Hacer páginas -> servicios, contactos y portfolio (SOLO MOBILE)
+
+
+*/
