@@ -36,6 +36,14 @@ img {
     padding-left: 10px;
 }
 
+.seccion_centrada_mobile {
+    max-width: 520px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 
 /*************************************************************************************************/
 
@@ -657,9 +665,105 @@ FALTA:
     margin-bottom: 10px;
 }
 
+/*Fin de TITULO Y FORMULARIO*/
 
+
+/*************************************************************************************************/
+
+
+/*MAPA*/
 .mapa{
     display: flex;
     margin-top: 5rem;
     margin-bottom: 5rem;
+}
+/*Fin de MAPA*/
+
+
+/*---------------------------------------------PORTAFOLIO---------------------------------------------*/
+
+
+.primera_seccion_portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    gap: 1rem;
+}
+
+.mozaik {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    gap: 1rem;
+}
+
+.img_mozaik {
+    border: 3px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.xtrem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    gap: 1rem;
+}
+
+.img_xtrem {
+    border: 3px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.llauretum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    gap: 1rem;
+}
+
+.img_llauretum {
+    border: 3px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.tu_intencion_positiva {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    gap: 1rem;
+}
+
+.img_tu_intencion_positiva {
+    border: 3px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    gap: 1rem;
+}
+
+.img_portfolio {
+    border: 3px solid;
+    border-color: black;
+    border-radius: 10px;
 }
