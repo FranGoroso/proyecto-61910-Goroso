@@ -217,6 +217,7 @@ img {
     background-color: #c2c2c2;
     align-items: center;
     height: 70vh;
+    overflow: hidden;
 }
 
 .iconos_tecnologias {
