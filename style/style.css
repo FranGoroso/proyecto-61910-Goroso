@@ -603,7 +603,7 @@ FALTA:
 /*---------------------------------------------CONTACTO---------------------------------------------*/
 
 
-/*TITULO Y FORMULARIO*/
+/*TITULO Y FORMULARIO (Mobile)*/
 
 .titulo_contacto {
     text-align: center;
@@ -665,24 +665,112 @@ FALTA:
     margin-bottom: 10px;
 }
 
-/*Fin de TITULO Y FORMULARIO*/
+/*Fin de TITULO Y FORMULARIO (Mobile)*/
+
+/*TITULO Y FORMULARIO (Desktop)*/
+
+@media(max-width: 768px) {
+
+    .texto_contacto {
+        display: none;
+    }
+
+}
+
+@media(min-width:768px) {
+
+    .primera_seccion_contacto {
+        display: grid;   
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 
+}
 /*************************************************************************************************/
 
 
-/*MAPA*/
+/*MAPA (Mobile)*/
 .mapa{
     display: flex;
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 /*Fin de MAPA*/
 
+/*MAPA (Desktop)*/
+
+@media(min-width:768px) {
+
+    .primera_seccion_contacto {
+        display: grid;   
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mapa {
+        max-width: 1200px;
+    }
+
+    .google_maps {
+        width: 100%;
+    }
+
+    .contenedor_titulo_y_parrafo_contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .contenedor_formulario_de_contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .formulario_de_contacto {
+        border: 2px solid;
+        border-color: #000;
+        border-radius: 15px;
+    }
+    
+}
+/*Fin de MAPA (Desktop)*/
+
+/*************************************************************************************************/
+
+/*ICONOS (Mobile)*/
+
+.contenedor_iconos_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+.maps {
+    height: 100px;
+    width: 50px;
+}
+
+.mail {
+    height: 100px;
+    width: 50px;
+}
+
+.seccion_iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    padding-bottom: 4rem;
+}
 
 /*---------------------------------------------PORTAFOLIO---------------------------------------------*/
 
-
+/*PRIMERA SECCION: PORTADA (Mobile)*/
 .primera_seccion_portfolio {
     display: flex;
     flex-direction: column;
@@ -692,7 +780,12 @@ FALTA:
     padding-bottom: 5rem;
     gap: 1rem;
 }
+/*Fin de PRIMERA SECCION: PORTADA (Mobile)*/
 
+
+/*************************************************************************************************/
+
+/*SEGUNDA SECCION: TRABAJOS (Mobile)*/
 .mozaik {
     display: flex;
     flex-direction: column;
@@ -767,3 +860,5 @@ FALTA:
     border-color: black;
     border-radius: 10px;
 }
+
+/*Fin de SEGUNDA SECCION: TRABAJOS (Mobile)*/
