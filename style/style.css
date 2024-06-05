@@ -1,4 +1,4 @@
-/*RESETEO MANUAL DE CSS*/ 
+/*--------------RESETEO MANUAL DE CSS--------------*/ 
 
 * {
     margin: 0;
@@ -17,9 +17,9 @@ a {
 img {
     max-width: 100%;
 }
-/*FIN de reseteo manual de css*/
+/*--------------FIN de reseteo manual de css--------------*/
 
-/*CLASES PARA PERSONALIZACION*/
+/*--------------CLASES PARA PERSONALIZACION--------------*/
 
 .botones_generales {
     height: 2rem;
@@ -44,9 +44,9 @@ img {
     padding-left: 10px;
 }
 
-/*************************************************************************************************/
+/*--------------Fin de CLASES PARA PERSONALIZACION--------------*/
 
-/*PRIMERA SECCION INDEX (mobile)*/
+/***************************************************PRIMERA SECCION INDEX: PORTADA (mobile)***************************************************/
 
 .primera_seccion_index {
     display: flex;
@@ -85,9 +85,10 @@ img {
     justify-content: center;
 }
 
-/*Fin de PRIMERA SECCION (mobile)*/
+/***************************************************Fin de PRIMERA SECCION INDEX: PORTADA(mobile)***************************************************/
 
-/*PRIMERA SECCION (Desktop)*/
+
+/***************************************************PRIMERA SECCION INDEX PORTADA(Desktop)***************************************************/
 
 @media (min-width: 768px) {
     
@@ -123,12 +124,13 @@ img {
         min-height: 100vh;
     }
 }
-/*Fin de PRIMERA SECCION INDEX (Desktop)*/
 
+/***************************************************Fin de PRIMERA SECCION INDEX PORTADA(Desktop)***************************************************/
 
-/*************************************************************************************************/
+/*-----------------------------------------------*/
 
-/*SEPARADOR INDEX (Mobile)*/
+/***************************************************SEPARADOR INDEX (Mobile)***************************************************/
+
 .separador {
     display: flex;
     flex-direction: row;
@@ -145,12 +147,11 @@ img {
 .seccion_separador_index{
     background-color: #f7a839;
 }
-/*Fin de separador index (Mobile)*/
+/***************************************************Fin de SEPARADOR INDEX (Mobile)***************************************************/
 
-/*************************************************************************************************/
+/*-----------------------------------------------*/
 
-
-/*SEGUNDA SECCION INDEX (mobile)*/
+/***************************************************SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(mobile)***************************************************/
 
 .segunda_seccion_index {
     display: flex;
@@ -182,9 +183,10 @@ img {
     grid-area: segundo_boton;
 }
 
-/*Fin de SEGUNDA SECCION INDEX (mobile)*/
+/***************************************************Fin de SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(mobile)***************************************************/
 
-/*SEGUNDA SECCION INDEX (Desktop)*/
+/***************************************************SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(Desktop)***************************************************/
+
 @media(min-width: 768px) {
     
     .segunda_seccion_index {
@@ -205,12 +207,11 @@ img {
     }
 }
 
-/*Fin de SEGUNDA SECCION INDEX (Desktop)*/
+/***************************************************Fin de SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(Desktop)***************************************************/
 
-/*************************************************************************************************/
+/*-----------------------------------------------*/
 
-
-/*TERCERA SECCION INDEX (Mobile)*/
+/***************************************************TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Mobile)***************************************************/
 
 .tercera_seccion_index {
     display: flex;
@@ -238,9 +239,9 @@ img {
     padding-bottom: 100px;
 }
 
-/*Fin de TERCERA SECCION INDEX (Mobile)*/
+/***************************************************Fin de TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Mobile)***************************************************/
 
-/*TERCERA SECCION INDEX (Desktop)*/
+/***************************************************TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Desktop)***************************************************/
 
 @media(min-width: 768px) {
     .tercera_seccion_index {
@@ -287,13 +288,11 @@ img {
     }
 }
 
-/*Fin de TERCERA SECCION INDEX (Desktop)*/
+/***************************************************Fin de TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Desktop)***************************************************/
 
+/*-----------------------------------------------*/
 
-/*************************************************************************************************/
-
-
-/*CUARTA SECCION INDEX (mobile)*/
+/***************************************************CUARTA SECCION INDEX: FORMA DE TRABAJO(mobile)***************************************************/
 
 .cuarta_seccion_index {
     display: grid;
@@ -413,9 +412,9 @@ img {
     }
 
 }
-/*Fin de CUARTA SECCION INDEX (Mobile)*/
+/***************************************************Fin de CUARTA SECCION INDEX: FORMA DE TRABAJO(mobile)***************************************************/
 
-/*CUARTA SECCION INDEX (Desktop)*/
+/***************************************************CUARTA SECCION INDEX: FORMA DE TRABAJO(Desktop)***************************************************/
 
 @media(min-width: 768px){
     .cuarta_seccion_index {
@@ -466,14 +465,17 @@ img {
     }
 }
 
-/*Fin CUARTA SECCION INDEX (Desktop)*/
-
-
-/*************************************************************************************************/
+/***************************************************Fin de CUARTA SECCION INDEX: FORMA DE TRABAJO(Desktop)***************************************************/
 
 
 
-/*----------------------------------------------FOOTER (Mobile)----------------------------------------------*/
+
+/*-----------------------------------------------*/
+
+
+
+
+/****************************************************FOOTER RESPONSIVE****************************************************/
 
 .footer {
     display: flex;
@@ -502,17 +504,21 @@ img {
     gap: 4vw;
 }
 
-/*----------------------------------------------Fin de FOOTER (Mobile)----------------------------------------------*/
+/****************************************************Fin de FOOTER RESPONSIVE****************************************************/
 
 
 
+
+/*-----------------------------------------------*/
 
 
 
 
 /*---------------------------------------------SOBRE MI---------------------------------------------*/
 
-/*PRIMERA SECCION: SOBRE MI (Mobile)*/
+
+
+/****************************************************PRIMERA SECCION SOBRE MI: PORTADA(Mobile)****************************************************/
 
 .primera_seccion_sobre_mi {
     position: relative; /* Para posicionar pseudo-elementos absolutamente dentro de esta sección */
@@ -578,13 +584,12 @@ img {
  }
 
 
-/*Fin de PRIMERA SECCION: SOBRE MI (Mobile)*/
+/****************************************************Fin de PRIMERA SECCION SOBRE MI: PORTADA(Mobile)****************************************************/
 
+/*-----------------------------------------------*/
 
-/*************************************************************************************************/
+/****************************************************SEGUNDA SECCION SOBRE MI: DESCRIPCION(Mobile)****************************************************/
 
-
-/*SEGUNDA SECCION: SOBRE MI (Mobile)*/
  .segunda_seccion_sobre_mi {
     display: flex;
     background-color: white;
@@ -605,10 +610,8 @@ img {
  .parrafo_segunda_seccion_sobre_mi {
     text-align: center;
  }
-/*Fin de SEGUNDA SECCION: SOBRE MI (Mobile)*/
- 
 
-/*************************************************************************************************/
+/****************************************************Fin de SEGUNDA SECCION SOBRE MI: DESCRIPCION(Mobile)****************************************************/
 
 
 /*
@@ -619,15 +622,12 @@ FALTA:
 -Sobre mi: Colocar iconos debajo del boton de enviar mail
 -Sobre mi: Ver bien la seccion 1 de sobre mi por el tema de diseño de fondo partido naranja. -> CHEQUEAR QUE ESTE TODO OK
 
--Hacer páginas -> servicios, contactos y portfolio (SOLO MOBILE)
-
-
 */
 
 
 /*---------------------------------------------SERVICIOS---------------------------------------------*/
 
-/*PORTADA (Mobile)*/
+/****************************************************PRIMERA SECCION SERVICIOS: PORTADA(Mobile)****************************************************/
 
 .portada_servicios {
     display: flex;
@@ -645,11 +645,14 @@ FALTA:
     text-shadow: 0 0 10px black;
 }
 
-/*Fin de PORTADA (Mobile)*/
+/****************************************************Fin de PRIMERA SECCION SERVICIOS: PORTADA(Mobile)****************************************************/
 
-/*************************************************************************************************/
+/*-----------------------------------------------*/
+
+/****************************************************SEGUNDA SECCION SERVICIOS: SERVICIOS OFRECIDOS (Mobile)****************************************************/
 
 /*SERVICIO CODIGO (Mobile)*/
+
 .servicio_codigo {
     display: flex;
     flex-direction: column;
@@ -699,13 +702,19 @@ FALTA:
     text-align: center;
 }
 
-/*Fin de SERVICIO WORDPRESS (Mobile)*/
+/****************************************************Fin de SEGUNDA SECCION: SERVICIOS OFRECIDOS (Mobile)****************************************************/
+
+
+
+
+/*-----------------------------------------------*/
+
+
 
 
 /*---------------------------------------------CONTACTO---------------------------------------------*/
 
-
-/*TITULO Y FORMULARIO (Mobile)*/
+/****************************************************PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Mobile)****************************************************/
 
 .titulo_contacto {
     text-align: center;
@@ -767,9 +776,9 @@ FALTA:
     margin-bottom: 10px;
 }
 
-/*Fin de TITULO Y FORMULARIO (Mobile)*/
+/****************************************************Fin de PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Mobile)****************************************************/
 
-/*TITULO Y FORMULARIO (Desktop)*/
+/****************************************************PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Desktop)****************************************************/
 
 @media(max-width: 768px) {
 
@@ -788,18 +797,19 @@ FALTA:
 
 
 }
-/*************************************************************************************************/
+/****************************************************Fin de PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Desktop)****************************************************/
 
+/*-----------------------------------------------*/
 
-/*MAPA (Mobile)*/
+/****************************************************SEGUNDA SECCION CONTACTO: MAPA(Mobile)****************************************************/
 .mapa{
     display: flex;
     margin-top: 5rem;
     margin-bottom: 2rem;
 }
-/*Fin de MAPA*/
+/****************************************************Fin de SEGUNDA SECCION CONTACTO: MAPA(Mobile)****************************************************/
 
-/*MAPA (Desktop)*/
+/****************************************************SEGUNDA SECCION CONTACTO: MAPA(Desktop)****************************************************/
 
 @media(min-width:768px) {
 
@@ -838,11 +848,11 @@ FALTA:
     }
     
 }
-/*Fin de MAPA (Desktop)*/
+/****************************************************Fin de SEGUNDA SECCION CONTACTO: MAPA(Desktop)****************************************************/
 
-/*************************************************************************************************/
+/*-----------------------------------------------*/
 
-/*ICONOS (Mobile)*/
+/****************************************************TERCERA SECCION CONTACTO: ICONOS (Mobile)****************************************************/
 
 .contenedor_iconos_contacto {
     display: flex;
@@ -870,9 +880,20 @@ FALTA:
     padding-bottom: 4rem;
 }
 
+/****************************************************Fin de TERCERA SECCION CONTACTO: ICONOS (Mobile)****************************************************/
+
+
+
+
+/*-----------------------------------------------*/
+
+
+
+
 /*---------------------------------------------PORTAFOLIO---------------------------------------------*/
 
-/*PRIMERA SECCION: PORTADA (Mobile)*/
+/****************************************************PRIMERA SECCION PORTFOLIO: PORTADA (Mobile)****************************************************/
+
 .primera_seccion_portfolio {
     display: flex;
     flex-direction: column;
@@ -882,12 +903,12 @@ FALTA:
     padding-bottom: 5rem;
     gap: 1rem;
 }
-/*Fin de PRIMERA SECCION: PORTADA (Mobile)*/
+/****************************************************Fin de PRIMERA SECCION PORTFOLIO: PORTADA (Mobile)****************************************************/
 
+/*-----------------------------------------------*/
 
-/*************************************************************************************************/
+/****************************************************SEGUNDA SECCION PORTFOLIO: TRABAJOS(Mobile)****************************************************/
 
-/*SEGUNDA SECCION: TRABAJOS (Mobile)*/
 .mozaik {
     display: flex;
     flex-direction: column;
@@ -963,4 +984,4 @@ FALTA:
     border-radius: 10px;
 }
 
-/*Fin de SEGUNDA SECCION: TRABAJOS (Mobile)*/
+/****************************************************Fin de SEGUNDA SECCION PORTFOLIO: TRABAJOS(Mobile)****************************************************/
