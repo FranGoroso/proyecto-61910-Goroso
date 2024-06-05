@@ -59,6 +59,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    overflow: hidden;
 }
 
 .titulo_primera_seccion {
@@ -214,7 +215,6 @@ img {
 .tercera_seccion_index {
     display: flex;
     flex-direction: column;
-    background-color: #c2c2c2;
     align-items: center;
     height: 90vh;
     overflow: hidden;
@@ -270,6 +270,8 @@ img {
         grid-area: iconos_tecnologias;
         padding-top: 0px;
         padding-bottom: 0px;
+        padding-left: 100px;
+        padding-right: 100px;
         /*AQUI QUIERO HACER UNA ANIMACION QUE SE VEA BIEN Y OCUPE TODO
         EL ESPACIO NECESARIO PARA UNA BUENA PRESENTACION*/
     }
@@ -277,6 +279,11 @@ img {
     .tercer_parrafo {
         padding-top: 0px;
         padding-bottom: 0px;
+    }
+
+    .contenedor {
+        background-color: rgb(218, 218, 218);
+        height: 60vh;
     }
 }
 
@@ -410,6 +417,55 @@ img {
 
 /*CUARTA SECCION INDEX (Desktop)*/
 
+@media(min-width: 768px){
+    .cuarta_seccion_index {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: 
+        "cuarto_subtitulo cuarto_subtitulo cuarto_subtitulo"
+        "uno dos tres"
+        "cuatro . cinco"
+        ;
+        gap: 100px;
+    }
+
+    .cuarta_seccion_index .cuatro {
+        grid-column: 1 / span 2;
+    }
+
+    .cuarta_seccion_index .cinco {
+        grid-column: 2 / span 2;
+    }
+
+    .uno {
+        background-size: 8rem;
+        max-width: 281.2px;
+    }
+    
+    .dos {
+        background-size: 8rem;
+        max-width: 281.2px;
+    }
+
+    .tres {
+        background-size: 8rem;
+        max-width: 281.2px;
+    }
+
+    .cuatro {
+        background-size: 8rem;
+        max-width: 281.2px;
+    }
+
+    .cinco {
+        background-size: 8rem;
+        max-width: 281.2px;
+    }
+}
+
 /*Fin CUARTA SECCION INDEX (Desktop)*/
 
 
@@ -423,13 +479,15 @@ img {
     display: flex;
     flex-direction: column;
     background-color: grey;
-    height: 20rem;
+    height: 30vh;
     justify-content: center;
     align-items: center;
 }
 
 .titulo_footer {
     padding-bottom: 30px;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -441,7 +499,7 @@ img {
 
 .seccion_contacto_footer {
     display: flex;
-    gap: 80px;
+    gap: 4vw;
 }
 
 /*----------------------------------------------Fin de FOOTER (Mobile)----------------------------------------------*/
