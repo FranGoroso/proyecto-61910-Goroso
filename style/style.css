@@ -529,6 +529,7 @@ img {
     color: #000; /* Color del texto */
     z-index: 1;
     overflow: hidden; /* Asegura que los pseudo-elementos no se desborden */
+    height: auto;
 }
 
 .primera_seccion_sobre_mi::before {
@@ -593,10 +594,10 @@ img {
  .segunda_seccion_sobre_mi {
     display: flex;
     background-color: white;
-    height: 40vh;
+    height: auto;
     justify-content: center;
     align-items: center;
-    padding-top: 25vh;
+    padding-top: 9vh;
     padding-bottom: 25vh;
  }
 
@@ -632,7 +633,7 @@ FALTA:
 .portada_servicios {
     display: flex;
     flex-direction: column;
-    background-image: url(../Img/portada_servicios.jpg);
+    background-image: url(../img/portada_servicios.jpg);
     background-size: cover;
     background-position: center;
     height: 40vh;
