@@ -756,20 +756,16 @@ FALTA:
 
 .novedades {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     text-align: center;
     margin-top: 1.5rem;
+    justify-content: center;
 }
 
 .boton_formulario {
     display: flex;
     flex-direction: column;
     margin-top: 1.5rem;
-}
-
-.novedades {
-    display: flex;
-    flex-direction: column;
 }
 
 .casilla_de_marcado {
@@ -846,6 +842,8 @@ FALTA:
         border: 2px solid;
         border-color: #000;
         border-radius: 15px;
+        height: 65vh;
+        width: 65vh;
     }
     
 }
