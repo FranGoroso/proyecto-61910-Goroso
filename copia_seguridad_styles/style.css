@@ -1,0 +1,995 @@
+/*--------------RESETEO MANUAL DE CSS--------------*/ 
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+/*--------------FIN de reseteo manual de css--------------*/
+
+/*--------------CLASES PARA PERSONALIZACION--------------*/
+
+.botones_generales {
+    height: 2rem;
+    width: 7rem;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.seccion_centrada {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.seccion_centrada_mobile {
+    max-width: 520px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*--------------Fin de CLASES PARA PERSONALIZACION--------------*/
+
+/***************************************************PRIMERA SECCION INDEX: PORTADA (mobile)***************************************************/
+
+.primera_seccion_index {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-image: url(../img/persona_programando.jpg);
+    background-size: cover;
+    height: 60vh;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.titulo_primera_seccion {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+}
+
+.subtitulo_primera_seccion {
+    color: white;
+    text-align: center;
+}
+
+.parrafo_primera_seccion {
+    color: white;
+    text-align: center;
+}
+
+.boton_primera_seccion {
+    height: 2rem;
+    width: 7rem;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+/***************************************************Fin de PRIMERA SECCION INDEX: PORTADA(mobile)***************************************************/
+
+
+/***************************************************PRIMERA SECCION INDEX PORTADA(Desktop)***************************************************/
+
+@media (min-width: 768px) {
+    
+    /*POR SI QUIERO PONER ALGUNAS IMAGENES Y QUEDEN EN GRID PERO DE MOMENTO NO*/
+    /* .primera_seccion_index {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". titulo_primera_seccion ."
+        ". subtitulo_primera_seccion ."
+        ". boton_primera_seccion ."
+        ;
+        justify-items: center;
+    } */
+
+    .titulo_primera_seccion{
+        grid-area: titulo_primera_seccion;
+    }
+    .subtitulo_primera_seccion{
+        grid-area: subtitulo_primera_seccion;
+    }
+    .parrafo_primera_seccion{
+        grid-area: parrafo_primera_seccion;
+    }
+    .boton_primera_seccion{
+        grid-area: boton_primera_seccion;
+    }
+}
+
+@media(min-width: 1200px){
+    .tamaño_minimo_portada_index{
+        min-height: 100vh;
+    }
+}
+
+/***************************************************Fin de PRIMERA SECCION INDEX PORTADA(Desktop)***************************************************/
+
+/*-----------------------------------------------*/
+
+/***************************************************SEPARADOR INDEX (Mobile)***************************************************/
+
+.separador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    justify-content: space-around;
+}
+
+.separador_contacto {
+    color: white;
+    font-size: 15px;
+}
+
+.seccion_separador_index{
+    background-color: #f7a839;
+}
+/***************************************************Fin de SEPARADOR INDEX (Mobile)***************************************************/
+
+/*-----------------------------------------------*/
+
+/***************************************************SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(mobile)***************************************************/
+
+.segunda_seccion_index {
+    display: flex;
+    flex-direction: column;
+}
+
+.segundo_subtitulo {
+    text-align: center;
+    padding: 2rem;
+    text-transform: uppercase;
+    grid-area: segundo_subtitulo;
+}
+
+.segundo_parrafo {
+    text-align: center;
+    padding: 1.3rem;
+    grid-area: segundo_parrafo;
+}
+
+.video {
+    align-self: center;
+    justify-content: center;
+    width: 90%;
+    grid-area: video;
+}
+
+.segundo_boton {
+    margin-bottom: 3rem;
+    grid-area: segundo_boton;
+}
+
+/***************************************************Fin de SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(mobile)***************************************************/
+
+/***************************************************SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(Desktop)***************************************************/
+
+@media(min-width: 768px) {
+    
+    .segunda_seccion_index {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 3fr 0.5fr;
+        grid-template-areas: 
+        "segundo_subtitulo segundo_subtitulo"
+        "segundo_parrafo video"
+        ". segundo_boton"
+        ;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .video {
+        margin-bottom: 0px;
+    }
+}
+
+/***************************************************Fin de SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(Desktop)***************************************************/
+
+/*-----------------------------------------------*/
+
+/***************************************************TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Mobile)***************************************************/
+
+.tercera_seccion_index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.iconos_tecnologias {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.tercer_subtitulo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.iconos_tecnologias {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+/***************************************************Fin de TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Mobile)***************************************************/
+
+/***************************************************TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Desktop)***************************************************/
+
+@media(min-width: 768px) {
+    .tercera_seccion_index {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10vw auto;
+        grid-template-areas:
+        "tercer_subtitulo tercer_subtitulo"
+        "iconos_tecnologias tercer_parrafo";
+        ;
+        justify-items: center;
+        align-items: center;
+        height: 50vh;
+    }
+    
+    .tercer_subtitulo {
+        grid-area: tercer_subtitulo;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .tercer_parrafo {
+        grid-area: tercer_parrafo;
+    }
+
+    .iconos_tecnologias {
+        grid-area: iconos_tecnologias;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 100px;
+        padding-right: 100px;
+        /*AQUI QUIERO HACER UNA ANIMACION QUE SE VEA BIEN Y OCUPE TODO
+        EL ESPACIO NECESARIO PARA UNA BUENA PRESENTACION*/
+    }
+    
+    .tercer_parrafo {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .contenedor {
+        background-color: rgb(218, 218, 218);
+        height: 60vh;
+    }
+}
+
+/***************************************************Fin de TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Desktop)***************************************************/
+
+/*-----------------------------------------------*/
+
+/***************************************************CUARTA SECCION INDEX: FORMA DE TRABAJO(mobile)***************************************************/
+
+.cuarta_seccion_index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 1fr 1fr 1fr;
+    grid-template-areas: 
+    "cuarto_subtitulo cuarto_subtitulo"
+    "uno dos"
+    "tres cuatro"
+    "cinco cinco"
+    ;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.cuarto_subtitulo {
+    text-align: center;
+    grid-area: cuarto_subtitulo;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.uno {
+    grid-area: uno;
+    background-image: url(../img/1-circle-fill.svg);
+    background-size: 100%;
+    height: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 30px;
+    max-width: 90px;
+    overflow: hidden;
+}
+
+.dos {
+    grid-area: dos;
+    background-image: url(../img/2-circle-fill.svg);
+    background-size: 100%;
+    height: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 30px;
+    max-width: 90px;
+    overflow: hidden;
+}
+
+.tres {
+    grid-area: tres;
+    background-image: url(../img/3-circle-fill.svg);
+    background-size: 100%;
+    height: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 30px;
+    max-width: 90px;
+    overflow: hidden;
+}
+
+.cuatro {
+    grid-area: cuatro;
+    background-image: url(../img/4-circle-fill.svg);
+    background-size: 100%;
+    height: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 30px;
+    max-width: 90px;
+    overflow: hidden;
+}
+
+.cinco {
+    grid-area: cinco;
+    display: flex;
+    background-image: url(../img/5-circle-fill.svg);
+    background-size: 100%;
+    height: 8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    max-width: 90px;
+    text-align: center;
+    overflow: hidden;
+}
+
+@media(min-width: 578px) {
+    .uno {
+        background-size: 40%;
+        max-width: 281.2px;
+    }
+    
+    .dos {
+        background-size: 40%;
+        max-width: 281.2px;
+    }
+
+    .tres {
+        background-size: 40%;
+        max-width: 281.2px;
+    }
+
+    .cuatro {
+        background-size: 40%;
+        max-width: 281.2px;
+    }
+
+    .cinco {
+        background-size: 40%;
+        max-width: 281.2px;
+    }
+
+}
+/***************************************************Fin de CUARTA SECCION INDEX: FORMA DE TRABAJO(mobile)***************************************************/
+
+/***************************************************CUARTA SECCION INDEX: FORMA DE TRABAJO(Desktop)***************************************************/
+
+@media(min-width: 768px){
+    .cuarta_seccion_index {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: 
+        "cuarto_subtitulo cuarto_subtitulo cuarto_subtitulo"
+        "uno dos tres"
+        "cuatro . cinco"
+        ;
+        gap: 100px;
+    }
+
+    .cuarta_seccion_index .cuatro {
+        grid-column: 1 / span 2;
+    }
+
+    .cuarta_seccion_index .cinco {
+        grid-column: 2 / span 2;
+    }
+
+    .uno {
+        background-size: 8rem;
+        max-width: 281.2px;
+    }
+    
+    .dos {
+        background-size: 8rem;
+        max-width: 281.2px;
+    }
+
+    .tres {
+        background-size: 8rem;
+        max-width: 281.2px;
+    }
+
+    .cuatro {
+        background-size: 8rem;
+        max-width: 281.2px;
+    }
+
+    .cinco {
+        background-size: 8rem;
+        max-width: 281.2px;
+    }
+}
+
+/***************************************************Fin de CUARTA SECCION INDEX: FORMA DE TRABAJO(Desktop)***************************************************/
+
+
+
+
+/*-----------------------------------------------*/
+
+
+
+
+/****************************************************FOOTER RESPONSIVE****************************************************/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_footer {
+    padding-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.iconos_footer {
+    display: flex;
+    gap: 20px;
+    padding:15px 0px 15px 0px;
+}
+
+.seccion_contacto_footer {
+    display: flex;
+    gap: 4vw;
+}
+
+/****************************************************Fin de FOOTER RESPONSIVE****************************************************/
+
+
+
+
+/*-----------------------------------------------*/
+
+
+
+
+/*---------------------------------------------SOBRE MI---------------------------------------------*/
+
+
+
+/****************************************************PRIMERA SECCION SOBRE MI: PORTADA(Mobile)****************************************************/
+
+.primera_seccion_sobre_mi {
+    position: relative; /* Para posicionar pseudo-elementos absolutamente dentro de esta sección */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000; /* Color del texto */
+    z-index: 1;
+    overflow: hidden; /* Asegura que los pseudo-elementos no se desborden */
+    height: auto;
+}
+
+.primera_seccion_sobre_mi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: orange; /* Color de la parte inferior */
+    clip-path: polygon(0 0, 100% 0, 0% 40%, 0 50%);
+    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+}
+
+.primera_seccion_sobre_mi::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Color de la parte superior */
+    clip-path: polygon(0 0, 100% 0, 0 50%, 0 100%);
+    z-index: -2; /* Asegura que esté detrás del otro pseudo-elemento */
+}
+
+ .foto_perfil { /*COLOCAR ESTILOS PARA NO ESTIRAR IMAGEN*/
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+ }
+
+ .titulo_primera_seccion_sobre_mi {
+    justify-content: center;
+    text-align: center;
+    padding-top: 2vh;
+ }
+
+ .subtitulo_primera_seccion_sobre_mi {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2vh;
+ }
+
+ .contenedor_img_boton_sobre_mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+ }
+
+
+/****************************************************Fin de PRIMERA SECCION SOBRE MI: PORTADA(Mobile)****************************************************/
+
+/*-----------------------------------------------*/
+
+/****************************************************SEGUNDA SECCION SOBRE MI: DESCRIPCION(Mobile)****************************************************/
+
+ .segunda_seccion_sobre_mi {
+    display: flex;
+    background-color: white;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 9vh;
+    padding-bottom: 9vh;
+ }
+
+ .contenedor_segunda_seccion_sobre_mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .parrafo_segunda_seccion_sobre_mi {
+    text-align: center;
+ }
+
+/****************************************************Fin de SEGUNDA SECCION SOBRE MI: DESCRIPCION(Mobile)****************************************************/
+
+
+/*
+
+FALTA: 
+
+-Sobre mi: Corregir deperfectos en mobile y hacer la version DESKTOP
+-Sobre mi: Colocar iconos debajo del boton de enviar mail
+-Sobre mi: Ver bien la seccion 1 de sobre mi por el tema de diseño de fondo partido naranja. -> CHEQUEAR QUE ESTE TODO OK
+
+*/
+
+
+/*---------------------------------------------SERVICIOS---------------------------------------------*/
+
+/****************************************************PRIMERA SECCION SERVICIOS: PORTADA(Mobile)****************************************************/
+
+.portada_servicios {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/portada_servicios.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_servicios {
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+/****************************************************Fin de PRIMERA SECCION SERVICIOS: PORTADA(Mobile)****************************************************/
+
+/*-----------------------------------------------*/
+
+/****************************************************SEGUNDA SECCION SERVICIOS: SERVICIOS OFRECIDOS (Mobile)****************************************************/
+
+/*SERVICIO CODIGO (Mobile)*/
+
+.servicio_codigo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    background-color: #c2c2c2;
+    margin: 100px 25px 100px 25px;
+    border-radius: 5%;
+}
+
+
+.subtitulo_desarrollo_codigo {
+    text-align: center;
+}
+
+.img_desarrollo_codigo {
+    justify-content: center;
+}
+
+.parrafo_desarrollo_codigo {
+    text-align: center;
+}
+
+/*SERVICIO WORDPRESS (Mobile)*/
+
+.servicio_wordpress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    background-color: #c2c2c2;
+    margin: 100px 25px 100px 25px;
+    border-radius: 5%;
+}
+
+.subtitulo_desarrollo_wordpress {
+    text-align: center;
+}
+
+.img_servicio_wordpress {
+    justify-content: center;
+}
+
+.parrafo_servicio_wordpress {
+    text-align: center;
+}
+
+/****************************************************Fin de SEGUNDA SECCION: SERVICIOS OFRECIDOS (Mobile)****************************************************/
+
+
+
+
+/*-----------------------------------------------*/
+
+
+
+
+/*---------------------------------------------CONTACTO---------------------------------------------*/
+
+/****************************************************PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Mobile)****************************************************/
+
+.titulo_contacto {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.formulario_de_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+
+.nombre_y_apellido {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.correo_electronico {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.asunto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.cuadro_de_texto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.novedades {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.boton_formulario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.casilla_de_marcado {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/****************************************************Fin de PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Mobile)****************************************************/
+
+/****************************************************PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Desktop)****************************************************/
+
+@media(max-width: 768px) {
+
+    .texto_contacto {
+        display: none;
+    }
+
+}
+
+@media(min-width:768px) {
+
+    .primera_seccion_contacto {
+        display: grid;   
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+/****************************************************Fin de PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Desktop)****************************************************/
+
+/*-----------------------------------------------*/
+
+/****************************************************SEGUNDA SECCION CONTACTO: MAPA(Mobile)****************************************************/
+.mapa{
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+/****************************************************Fin de SEGUNDA SECCION CONTACTO: MAPA(Mobile)****************************************************/
+
+/****************************************************SEGUNDA SECCION CONTACTO: MAPA(Desktop)****************************************************/
+
+@media(min-width:768px) {
+
+    .primera_seccion_contacto {
+        display: grid;   
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mapa {
+        max-width: 1200px;
+    }
+
+    .google_maps {
+        width: 100%;
+    }
+
+    .contenedor_titulo_y_parrafo_contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .contenedor_formulario_de_contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .formulario_de_contacto {
+        border: 2px solid;
+        border-color: #000;
+        border-radius: 15px;
+        height: 65vh;
+        width: 65vh;
+    }
+    
+}
+/****************************************************Fin de SEGUNDA SECCION CONTACTO: MAPA(Desktop)****************************************************/
+
+/*-----------------------------------------------*/
+
+/****************************************************TERCERA SECCION CONTACTO: ICONOS (Mobile)****************************************************/
+
+.contenedor_iconos_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+.maps {
+    height: 100px;
+    width: 50px;
+}
+
+.mail {
+    height: 100px;
+    width: 50px;
+}
+
+.seccion_iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    padding-bottom: 4rem;
+}
+
+/****************************************************Fin de TERCERA SECCION CONTACTO: ICONOS (Mobile)****************************************************/
+
+
+
+
+/*-----------------------------------------------*/
+
+
+
+
+/*---------------------------------------------PORTAFOLIO---------------------------------------------*/
+
+/****************************************************PRIMERA SECCION PORTFOLIO: PORTADA (Mobile)****************************************************/
+
+.primera_seccion_portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    gap: 1rem;
+}
+/****************************************************Fin de PRIMERA SECCION PORTFOLIO: PORTADA (Mobile)****************************************************/
+
+/*-----------------------------------------------*/
+
+/****************************************************SEGUNDA SECCION PORTFOLIO: TRABAJOS(Mobile)****************************************************/
+
+.mozaik {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    gap: 1rem;
+}
+
+.img_mozaik {
+    border: 3px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.xtrem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    gap: 1rem;
+}
+
+.img_xtrem {
+    border: 3px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.llauretum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    gap: 1rem;
+}
+
+.img_llauretum {
+    border: 3px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.tu_intencion_positiva {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    gap: 1rem;
+}
+
+.img_tu_intencion_positiva {
+    border: 3px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    gap: 1rem;
+}
+
+.img_portfolio {
+    border: 3px solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+/****************************************************Fin de SEGUNDA SECCION PORTFOLIO: TRABAJOS(Mobile)****************************************************/
+
+
+
+
+/*CORRECCIONES:
+-CORREGIR SOBRE MI: INICIO MOBILE 
+-INCORPORAR FOTO DE PORTADA EN SERVICIOS MOBILE 
+-CORREGIR CHECKBOX EN CONTACTO: QUE QUEDE AL LADO DE NOVEDADES 
+*/
