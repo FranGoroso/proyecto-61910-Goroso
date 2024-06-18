@@ -1,0 +1,52 @@
+/*--------------RESETEO MANUAL DE CSS--------------*/ 
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+/*--------------FIN de reseteo manual de css--------------*/
+
+/*--------------CLASES PARA PERSONALIZACION--------------*/
+
+.botones_generales {
+    height: 2rem;
+    width: 7rem;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.seccion_centrada {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.seccion_centrada_mobile {
+    max-width: 520px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.blanco-centrado {
+    color: white;
+    text-align: center;
+}
+
+/*--------------Fin de CLASES PARA PERSONALIZACION--------------*/

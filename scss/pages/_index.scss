@@ -1,0 +1,74 @@
+/***************************************************PRIMERA SECCION INDEX: PORTADA (mobile)***************************************************/
+
+.seccion-uno-index {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-image: url(../img/persona_programando.jpg);
+    background-size: cover;
+    height: 60vh;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.seccion-uno-index_h1 {
+    @extend .blanco-centrado;
+    text-shadow: 0 0 10px black;
+}
+
+.seccion-uno-index_h2 {
+    @extend .blanco-centrado;
+}
+
+.seccion-uno-index_p {
+    @extend .blanco-centrado;
+}
+
+.button--portada { 
+    @extend .botones_generales;
+    justify-content: center;
+    background-color: red; /*PRUEBA*/
+} 
+/***************************************************Fin de PRIMERA SECCION INDEX: PORTADA(mobile)***************************************************/
+
+/***************************************************PRIMERA SECCION INDEX PORTADA(Desktop)***************************************************/
+
+@media (min-width: 768px) {
+    
+    /*POR SI QUIERO PONER ALGUNAS IMAGENES Y QUEDEN EN GRID PERO DE MOMENTO NO*/
+    /* .primera_seccion_index {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". titulo_primera_seccion ."
+        ". subtitulo_primera_seccion ."
+        ". boton_primera_seccion ."
+        ;
+        justify-items: center;
+    } */
+
+    .seccion-uno-index_h1{
+        grid-area: seccion-uno-index_h1;
+    }
+    .seccion-uno-index_h2{
+        grid-area: seccion-uno-index_h2;
+    }
+    .seccion-uno-index_p{
+        grid-area: seccion-uno-index_p;
+    }
+    .seccion-uno-index_button{
+        grid-area: seccion-uno-index_button;
+    }
+}
+
+@media(min-width: 1200px){
+    .seccion-uno-index--min-height{
+        min-height: 100vh;
+    }
+}
+
+/***************************************************Fin de PRIMERA SECCION INDEX PORTADA(Desktop)***************************************************/
