@@ -1,24 +1,5 @@
 /*-----------------------------------------------*/
 
-/***************************************************SEPARADOR INDEX (Mobile)***************************************************/
-
-.separador {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px;
-    justify-content: space-around;
-}
-
-.separador_contacto {
-    color: white;
-    font-size: 15px;
-}
-
-.seccion_separador_index{
-    background-color: #f7a839;
-}
-/***************************************************Fin de SEPARADOR INDEX (Mobile)***************************************************/
 
 /*-----------------------------------------------*/
 

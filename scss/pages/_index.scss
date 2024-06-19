@@ -72,3 +72,82 @@
 }
 
 /***************************************************Fin de PRIMERA SECCION INDEX PORTADA(Desktop)***************************************************/
+
+/***************************************************SEPARADOR INDEX (Mobile)***************************************************/
+
+.seccion-separador-index {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    justify-content: space-around;
+    background-color: #f7a839;
+}
+
+.seccion-separador-index_div{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 15px;
+}
+
+
+/***************************************************Fin de SEPARADOR INDEX (Mobile)***************************************************/
+
+/***************************************************SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(mobile)***************************************************/
+
+.seccion-dos-index {
+    @extend .flex_column;
+}
+
+.seccion-dos-index_h2 {
+    text-align: center;
+    padding: 2rem;
+    text-transform: uppercase;
+    grid-area: segundo_subtitulo;
+}
+
+.seccion-dos-index_p {
+    text-align: center;
+    padding: 1.3rem;
+    grid-area: segundo_parrafo;
+}
+
+.seccion-dos-index_button {
+    @extend .seccion-dos-index_button;
+    align-self: center;
+    justify-content: center;
+    width: 90%;
+    grid-area: video;
+}
+
+.button--grid {
+    margin-bottom: 3rem;
+    grid-area: segundo_boton;
+}
+
+/***************************************************Fin de SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(mobile)***************************************************/
+
+/***************************************************SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(Desktop)***************************************************/
+
+@media(min-width: 768px) {
+    
+    .segunda_seccion_index {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 3fr 0.5fr;
+        grid-template-areas: 
+        "segundo_subtitulo segundo_subtitulo"
+        "segundo_parrafo video"
+        ". segundo_boton"
+        ;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .video {
+        margin-bottom: 0px;
+    }
+}
+
+/***************************************************Fin de SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(Desktop)***************************************************/
