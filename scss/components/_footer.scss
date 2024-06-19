@@ -1,0 +1,30 @@
+/****************************************************FOOTER RESPONSIVE****************************************************/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_h2 {
+    padding-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.footer_div {
+    display: flex;
+    gap: 20px;
+    padding:15px 0px 15px 0px;
+}
+
+.div--iconos {
+    display: flex;
+    gap: 4vw;
+}
+
+/****************************************************Fin de FOOTER RESPONSIVE****************************************************/
