@@ -20,7 +20,7 @@ img {
 
 /*--------------FIN de reseteo manual de css--------------*/
 /*--------------CLASES PARA PERSONALIZACION--------------*/
-.botones_generales, .seccion-dos-index_button, .button--portada {
+.botones_generales, .seccion-uno-sobre-mi_button, .seccion-dos-index_button, .button--portada {
   height: 2rem;
   width: 7rem;
   border-radius: 10px;
@@ -415,7 +415,7 @@ img {
 
 /****************************************************Fin de FOOTER RESPONSIVE****************************************************/
 /****************************************************PRIMERA SECCION SOBRE MI: PORTADA(Mobile)****************************************************/
-.seccion-uno-sobre-mi {
+.contenedor_general {
   position: relative; /* Para posicionar pseudo-elementos absolutamente dentro de esta sección */
   display: flex;
   flex-direction: column;
@@ -427,7 +427,7 @@ img {
   height: auto;
 }
 
-.seccion-uno-sobre-mi::before {
+.contenedor_general::before {
   content: "";
   position: absolute;
   top: 0;
@@ -439,7 +439,7 @@ img {
   z-index: -1; /* Asegura que el fondo esté detrás del contenido */
 }
 
-.seccion-uno-sobre-mi::after {
+.contenedor_general::after {
   content: "";
   position: absolute;
   top: 0;
@@ -480,9 +480,33 @@ img {
 }
 
 /****************************************************Fin de PRIMERA SECCION SOBRE MI: PORTADA(Mobile)****************************************************/
+/****************************************************PRIMERA SECCION SOBRE MI: PORTADA(Desktop)****************************************************/
+@media (min-width: 768px) {
+  .contenedor_general {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 90vh;
+  }
+  .lado--izquierdo {
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .lado--derecho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+}
 /*-----------------------------------------------*/
 /****************************************************SEGUNDA SECCION SOBRE MI: DESCRIPCION(Mobile)****************************************************/
-.cion-dos-sobre-mi {
+.seccion-dos-sobre-mi {
   display: flex;
   background-color: white;
   height: auto;
