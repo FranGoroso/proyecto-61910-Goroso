@@ -1,0 +1,160 @@
+/*---------------------------------------------CONTACTO---------------------------------------------*/
+
+/****************************************************PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Mobile)****************************************************/
+
+.seccion-uno_contacto_div_h1 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.seccion-dos_contacto_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+
+.seccion-dos_contacto_form_div--nombre {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.seccion-dos_contacto_form_div--correo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.seccion-dos_contacto_form_div--asunto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.seccion-dos_contacto_form_div--texto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.seccion-dos_contacto_form_div--novedades {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.seccion-dos_contacto_form_div_button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.casilla_de_marcado {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/****************************************************Fin de PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Mobile)****************************************************/
+
+/****************************************************PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Desktop)****************************************************/
+
+@media(max-width: 768px) {
+
+    .seccion-uno_contacto_div_p {
+        display: none;
+    }
+
+}
+
+@media(min-width:768px) {
+
+    .primera_seccion_contacto {
+        display: grid;   
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+/****************************************************Fin de PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Desktop)****************************************************/
+
+/*-----------------------------------------------*/
+
+/****************************************************SEGUNDA SECCION CONTACTO: MAPA(Mobile)****************************************************/
+.seccion-tres_contacto--google_maps{
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+/****************************************************Fin de SEGUNDA SECCION CONTACTO: MAPA(Mobile)****************************************************/
+
+/****************************************************SEGUNDA SECCION CONTACTO: MAPA(Desktop)****************************************************/
+
+@media(min-width:768px) {
+
+    .primera_seccion_contacto {
+        display: grid;   
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor_titulo_y_parrafo_contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .contenedor_formulario_de_contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .formulario_de_contacto {
+        border: 2px solid;
+        border-color: #000;
+        border-radius: 15px;
+        height: 65vh;
+        width: 65vh;
+    }
+    
+}
+/****************************************************Fin de SEGUNDA SECCION CONTACTO: MAPA(Desktop)****************************************************/
+
+/*-----------------------------------------------*/
+
+/****************************************************TERCERA SECCION CONTACTO: ICONOS (Mobile)****************************************************/
+
+.seccion-cuatro_contacto_iconos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+.seccion-cuatro_contacto_iconos--maps {
+    height: 100px;
+    width: 50px;
+}
+
+.seccion-cuatro_contacto_iconos--mail {
+    height: 100px;
+    width: 50px;
+}
+
+.seccion-cuatro_contacto_iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    padding-bottom: 4rem;
+}
+
+/****************************************************Fin de TERCERA SECCION CONTACTO: ICONOS (Mobile)****************************************************/

@@ -1,8 +1,7 @@
 /***************************************************PRIMERA SECCION INDEX: PORTADA (mobile)***************************************************/
 
 .seccion-uno-index {
-    display: flex;
-    flex-direction: column;
+    @extend .flex_column;
     padding: 2rem;
     background-image: url(../img/persona_programando.jpg);
     background-size: cover;
@@ -30,26 +29,12 @@
 .button--portada { 
     @extend .botones_generales;
     justify-content: center;
-    background-color: red; /*PRUEBA*/
 } 
 /***************************************************Fin de PRIMERA SECCION INDEX: PORTADA(mobile)***************************************************/
 
 /***************************************************PRIMERA SECCION INDEX PORTADA(Desktop)***************************************************/
 
 @media (min-width: 768px) {
-    
-    /*POR SI QUIERO PONER ALGUNAS IMAGENES Y QUEDEN EN GRID PERO DE MOMENTO NO*/
-    /* .primera_seccion_index {
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        ". titulo_primera_seccion ."
-        ". subtitulo_primera_seccion ."
-        ". boton_primera_seccion ."
-        ;
-        justify-items: center;
-    } */
 
     .seccion-uno-index_h1{
         grid-area: seccion-uno-index_h1;
@@ -76,8 +61,7 @@
 /***************************************************SEPARADOR INDEX (Mobile)***************************************************/
 
 .seccion-separador-index {
-    display: flex;
-    flex-direction: row;
+    @extend .flex_row;
     align-items: center;
     padding: 4px;
     justify-content: space-around;
@@ -85,12 +69,15 @@
 }
 
 .seccion-separador-index_div{
-    display: flex;
-    flex-direction: row;
+    @extend .flex_row;
     color: white;
-    font-size: 15px;
+    width: 100%;
+    justify-content: space-around
 }
 
+.seccion-separador-index_h4{
+    font-size: 1rem
+}
 
 /***************************************************Fin de SEPARADOR INDEX (Mobile)***************************************************/
 
@@ -126,8 +113,12 @@
 .button--grid {
     margin-bottom: 3rem;
     grid-area: button_video;
+    width: auto;
 }
 
+.video {
+    width: 98%;
+}
 /***************************************************Fin de SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(mobile)***************************************************/
 
 /***************************************************SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(Desktop)***************************************************/
@@ -161,24 +152,21 @@ height: 60vh;
 
 .seccion-tres-index_div {
     @extend .seccion_centrada;
-    display: flex;
-    flex-direction: column;
+    @extend .flex_column;
     align-items: center;
     height: 90vh;
     overflow: hidden;
 }
 
-.seccion-tres-index_h2 {
+.seccion-cuatro-index_h2 {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .seccion-tres-index_div_tecnologias {
-    display: grid;
+    @extend .grid_centrado;
     grid-template-columns: repeat(5, 1fr);
     width: 100%;
-    justify-items: center;
-    align-items: center;
     padding-top: 50px;
     padding-bottom: 100px;
 }
@@ -190,14 +178,14 @@ height: 60vh;
 @media(min-width: 768px) {
     .tercera_seccion_index {
         display: grid;
+        justify-items: center;
+        align-items: center;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 10vw auto;
         grid-template-areas:
         "tercer_subtitulo tercer_subtitulo"
         "iconos_tecnologias tercer_parrafo";
         ;
-        justify-items: center;
-        align-items: center;
         height: 50vh;
     }
     
@@ -238,7 +226,7 @@ height: 60vh;
 
 .seccion-cuatro-index {
     @extend .seccion_centrada_mobile;
-    display: grid;
+    @extend .grid_centrado;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 150px 1fr 1fr 1fr;
     grid-template-areas: 
@@ -247,8 +235,6 @@ height: 60vh;
     "article--tres article--cuatro"
     "article--cinco article--cinco"
     ;
-    justify-items: center;
-    align-items: center;
     padding-bottom: 80px;
 }
 
@@ -329,27 +315,27 @@ height: 60vh;
 }
 
 @media(min-width: 578px) {
-    .uno {
+    .article--uno {
         background-size: 40%;
         max-width: 281.2px;
     }
     
-    .dos {
+    .article--dos {
         background-size: 40%;
         max-width: 281.2px;
     }
 
-    .tres {
+    .article--tres {
         background-size: 40%;
         max-width: 281.2px;
     }
 
-    .cuatro {
+    .article--cuatro {
         background-size: 40%;
         max-width: 281.2px;
     }
 
-    .cinco {
+    .article--cinco {
         background-size: 40%;
         max-width: 281.2px;
     }

@@ -1,0 +1,78 @@
+/*---------------------------------------------SERVICIOS---------------------------------------------*/
+
+/****************************************************PRIMERA SECCION SERVICIOS: PORTADA(Mobile)****************************************************/
+
+.seccion-uno-portada {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/portada_servicios.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-uno-portada_titulo {
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+/****************************************************Fin de PRIMERA SECCION SERVICIOS: PORTADA(Mobile)****************************************************/
+
+/*-----------------------------------------------*/
+
+/****************************************************SEGUNDA SECCION SERVICIOS: SERVICIOS OFRECIDOS (Mobile)****************************************************/
+
+/*SERVICIO CODIGO (Mobile)*/
+
+.seccion-uno_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    background-color: #c2c2c2;
+    margin: 100px 25px 100px 25px;
+    border-radius: 5%;
+}
+
+
+.seccion-uno_div {
+    text-align: center;
+}
+
+.seccion-uno_img {
+    justify-content: center;
+}
+
+.seccion-uno_img {
+    text-align: center;
+}
+
+/*SERVICIO WORDPRESS (Mobile)*/
+
+.seccion-dos_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    background-color: #c2c2c2;
+    margin: 100px 25px 100px 25px;
+    border-radius: 5%;
+}
+
+.seccion-dos_div_h2 {
+    text-align: center;
+}
+
+.seccion-dos_div_img {
+    justify-content: center;
+}
+
+.seccion-dos_div_p {
+    text-align: center;
+}
+
+/****************************************************Fin de SEGUNDA SECCION: SERVICIOS OFRECIDOS (Mobile)****************************************************/

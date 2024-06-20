@@ -1,37 +1,8 @@
-/*
-
-FALTA: 
-
--Sobre mi: Corregir deperfectos en mobile y hacer la version DESKTOP
--Sobre mi: Colocar iconos debajo del boton de enviar mail
--Sobre mi: Ver bien la seccion 1 de sobre mi por el tema de diseño de fondo partido naranja. -> CHEQUEAR QUE ESTE TODO OK
-
-*/
-
-
-
-
-
-
-/*-----------------------------------------------*/
-
-
-
-
-
-
-
-
-/*-----------------------------------------------*/
-
-
-
-
 /*---------------------------------------------PORTAFOLIO---------------------------------------------*/
 
 /****************************************************PRIMERA SECCION PORTFOLIO: PORTADA (Mobile)****************************************************/
 
-.primera_seccion_portfolio {
+.seccion-uno-portfolio {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +17,7 @@ FALTA:
 
 /****************************************************SEGUNDA SECCION PORTFOLIO: TRABAJOS(Mobile)****************************************************/
 
-.mozaik {
+.seccion-dos-portfolio_div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,13 +26,13 @@ FALTA:
     gap: 1rem;
 }
 
-.img_mozaik {
+.seccion-dos-portfolio_img {
     border: 3px solid;
     border-color: black;
     border-radius: 10px;
 }
 
-.xtrem {
+.seccion-tres-portfolio_div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,13 +41,13 @@ FALTA:
     gap: 1rem;
 }
 
-.img_xtrem {
+.seccion-tres-portfolio_div_img {
     border: 3px solid;
     border-color: black;
     border-radius: 10px;
 }
 
-.llauretum {
+.seccion-cuatro-portfolio_div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,13 +56,13 @@ FALTA:
     gap: 1rem;
 }
 
-.img_llauretum {
+.seccion-cuatro-portfolio_div_img {
     border: 3px solid;
     border-color: black;
     border-radius: 10px;
 }
 
-.tu_intencion_positiva {
+.seccion-cinco-portfolio_div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,13 +71,13 @@ FALTA:
     gap: 1rem;
 }
 
-.img_tu_intencion_positiva {
+.seccion-cinco-portfolio_div_img {
     border: 3px solid;
     border-color: black;
     border-radius: 10px;
 }
 
-.portfolio {
+.seccion-seis-portfolio_div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,19 +86,10 @@ FALTA:
     gap: 1rem;
 }
 
-.img_portfolio {
+.seccion-seis-portfolio_div_img {
     border: 3px solid;
     border-color: black;
     border-radius: 10px;
 }
 
 /****************************************************Fin de SEGUNDA SECCION PORTFOLIO: TRABAJOS(Mobile)****************************************************/
-
-
-
-
-/*CORRECCIONES:
--CORREGIR SOBRE MI: INICIO MOBILE 
--INCORPORAR FOTO DE PORTADA EN SERVICIOS MOBILE 
--CORREGIR CHECKBOX EN CONTACTO: QUE QUEDE AL LADO DE NOVEDADES 
-*/

@@ -1,0 +1,95 @@
+/****************************************************PRIMERA SECCION SOBRE MI: PORTADA(Mobile)****************************************************/
+
+.seccion-uno-sobre-mi {
+    position: relative; /* Para posicionar pseudo-elementos absolutamente dentro de esta sección */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000; /* Color del texto */
+    z-index: 1;
+    overflow: hidden; /* Asegura que los pseudo-elementos no se desborden */
+    height: auto;
+}
+
+.seccion-uno-sobre-mi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: orange; /* Color de la parte inferior */
+    clip-path: polygon(0 0, 100% 0, 0% 40%, 0 50%);
+    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+}
+
+.seccion-uno-sobre-mi::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Color de la parte superior */
+    clip-path: polygon(0 0, 100% 0, 0 50%, 0 100%);
+    z-index: -2; /* Asegura que esté detrás del otro pseudo-elemento */
+}
+
+ .seccion-uno-sobre-mi_img { /*COLOCAR ESTILOS PARA NO ESTIRAR IMAGEN*/
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+ }
+
+ .seccion-uno-sobre-mi_h1 {
+    justify-content: center;
+    text-align: center;
+    padding-top: 2vh;
+ }
+
+ .seccion-uno-sobre-mi_h2 {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2vh;
+ }
+
+ .seccion-uno-sobre-mi_div_img_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+ }
+
+
+/****************************************************Fin de PRIMERA SECCION SOBRE MI: PORTADA(Mobile)****************************************************/
+
+/*-----------------------------------------------*/
+
+/****************************************************SEGUNDA SECCION SOBRE MI: DESCRIPCION(Mobile)****************************************************/
+
+ .cion-dos-sobre-mi {
+    display: flex;
+    background-color: white;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 9vh;
+    padding-bottom: 9vh;
+ }
+
+ .div--contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .seccion-dos-sobre-mi_p {
+    text-align: center;
+ }
+
+/****************************************************Fin de SEGUNDA SECCION SOBRE MI: DESCRIPCION(Mobile)****************************************************/

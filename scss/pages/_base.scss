@@ -53,4 +53,15 @@ img {
     display: flex;
     flex-direction: column;
 }
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid_centrado {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
 /*--------------Fin de CLASES PARA PERSONALIZACION--------------*/
