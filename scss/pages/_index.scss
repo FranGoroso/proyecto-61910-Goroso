@@ -36,6 +36,13 @@
 
 @media (min-width: 768px) {
 
+    .seccion-uno-index {
+        max-width: 1600px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
     .seccion-uno-index_h1{
         grid-area: seccion-uno-index_h1;
     }
@@ -66,6 +73,11 @@
     padding: 4px;
     justify-content: space-around;
     background-color: #f7a839;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .seccion-separador-index_div{
@@ -87,6 +99,11 @@
     @extend .flex_column;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .seccion-dos-index_h2 {
@@ -146,8 +163,8 @@
 /***************************************************TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Mobile)***************************************************/
 
 .seccion-tres-index {
-background-color: rgb(218, 218, 218);
-height: 60vh;
+    background-color: rgb(218, 218, 218);
+    height: 65vh;
 }
 
 .seccion-tres-index_div {
@@ -158,7 +175,7 @@ height: 60vh;
     overflow: hidden;
 }
 
-.seccion-cuatro-index_h2 {
+.seccion-tres-index_h2 {
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -176,222 +193,155 @@ height: 60vh;
 /***************************************************TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Desktop)***************************************************/
 
 @media(min-width: 768px) {
-    .tercera_seccion_index {
+    .seccion-tres-index_div {
         display: grid;
-        justify-items: center;
-        align-items: center;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 10vw auto;
-        grid-template-areas:
-        "tercer_subtitulo tercer_subtitulo"
-        "iconos_tecnologias tercer_parrafo";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 9rem 30rem;
+        height: auto;
+        grid-template-areas: 
+        "seccion-tres-index_h2 seccion-tres-index_h2"
+        "seccion-tres-index_div_tecnologias seccion-tres-index_p"
         ;
-        height: 50vh;
     }
-    
-    .tercer_subtitulo {
-        grid-area: tercer_subtitulo;
+
+    .seccion-tres-index {
+        height: auto;
+    }
+
+    .seccion-tres-index_h2 {
+        grid-area: seccion-tres-index_h2;
         padding-top: 0px;
         padding-bottom: 0px;
     }
 
-    .tercer_parrafo {
-        grid-area: tercer_parrafo;
+    .seccion-tres-index_div_tecnologias {
+        grid-area: seccion-tres-index_div_tecnologias;
+        padding-left:4rem ;
+        padding-right:4rem ;
     }
 
-    .iconos_tecnologias {
-        grid-area: iconos_tecnologias;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-left: 100px;
-        padding-right: 100px;
-        /*AQUI QUIERO HACER UNA ANIMACION QUE SE VEA BIEN Y OCUPE TODO
-        EL ESPACIO NECESARIO PARA UNA BUENA PRESENTACION*/
-    }
-    
-    .tercer_parrafo {
-        padding-top: 0px;
-        padding-bottom: 0px;
+    .seccion-tres-index_p {
+        grid-area: seccion-tres-index_p;
     }
 
-    .contenedor {
-        background-color: rgb(218, 218, 218);
-        height: 60vh;
+    .seccion-tres-index_h2 {
+        text-align: center;
     }
 }
 
 /***************************************************Fin de TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Desktop)***************************************************/
 
-/***************************************************CUARTA SECCION INDEX: FORMA DE TRABAJO(mobile)***************************************************/
+/***************************************************CUARTA SECCION INDEX: METODO DE TRABAJO (Mobile)***************************************************/
 
 .seccion-cuatro-index {
-    @extend .seccion_centrada_mobile;
-    @extend .grid_centrado;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 150px 1fr 1fr 1fr;
-    grid-template-areas: 
-    "seccion-cuatro-index_h2 seccion-cuatro-index_h2"
-    "article--uno article--dos"
-    "article--tres article--cuatro"
-    "article--cinco article--cinco"
-    ;
-    padding-bottom: 80px;
-}
-
-.seccion-cuatro-index_h2 {
-    text-align: center;
-    grid-area: seccion-cuatro-index_h2;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.article--uno {
-    grid-area: article--uno;
-    background-image: url(../img/1-circle-fill.svg);
-    background-size: 100%;
-    height: 8rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    margin: 30px;
-    max-width: 90px;
-    overflow: hidden;
-}
-
-.article--dos {
-    grid-area: article--dos;
-    background-image: url(../img/2-circle-fill.svg);
-    background-size: 100%;
-    height: 8rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    margin: 30px;
-    max-width: 90px;
-    overflow: hidden;
-}
-
-.article--tres {
-    grid-area: article--tres;
-    background-image: url(../img/3-circle-fill.svg);
-    background-size: 100%;
-    height: 8rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    margin: 30px;
-    max-width: 90px;
-    overflow: hidden;
-}
-
-.article--cuatro {
-    grid-area: article--cuatro;
-    background-image: url(../img/4-circle-fill.svg);
-    background-size: 100%;
-    height: 8rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    margin: 30px;
-    max-width: 90px;
-    overflow: hidden;
-}
-
-.article--cinco {
-    grid-area: article--cinco;
     display: flex;
-    background-image: url(../img/5-circle-fill.svg);
-    background-size: 100%;
-    height: 8rem;
-    background-position: center;
-    background-repeat: no-repeat;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
-    max-width: 90px;
-    text-align: center;
-    overflow: hidden;
+    padding: 2rem; /* Relleno alrededor del contenedor */
 }
 
-@media(min-width: 578px) {
+.seccion-cuatro-index_article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; /* Espacio entre los artículos */
+}
+
+.article--uno, .article--dos, .article--tres, .article--cuatro, .article--cinco {
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 6rem;
+    padding: 2rem; 
+    margin: 1rem 0; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.article--uno {
+    background-image: url(../../img/1-circle-fill.svg);
+}
+
+.article--dos {
+    background-image: url(../../img/2-circle-fill.svg);
+}
+
+.article--tres {
+    background-image: url(../../img/3-circle-fill.svg);
+}
+
+.article--cuatro {
+    background-image: url(../../img/4-circle-fill.svg);
+}
+
+.article--cinco {
+    background-image: url(../../img/5-circle-fill.svg);
+}
+
+
+/***************************************************Fin de CUARTA SECCION INDEX: METODO DE TRABAJO (Mobile)***************************************************/
+
+/***************************************************CUARTA SECCION INDEX: METODO DE TRABAJO (Desktop)***************************************************/
+@media (min-width: 768px) {
+    .seccion-cuatro-index {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "seccion-cuatro-index_h2 seccion-cuatro-index_h2"
+        "article--uno article--dos"
+        "article--tres article--cuatro"
+        "article--cinco article--cinco"
+        ;
+        gap: 6rem;
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10rem;
+    }
+
+    .seccion-cuatro-index_h2{
+        grid-area: seccion-cuatro-index_h2;
+        text-align: center; 
+        margin-bottom: 2rem;
+        margin-top: 6rem; 
+    }
+
     .article--uno {
-        background-size: 40%;
-        max-width: 281.2px;
+        grid-area: article--uno;
     }
     
     .article--dos {
-        background-size: 40%;
-        max-width: 281.2px;
-    }
-
-    .article--tres {
-        background-size: 40%;
-        max-width: 281.2px;
-    }
-
-    .article--cuatro {
-        background-size: 40%;
-        max-width: 281.2px;
-    }
-
-    .article--cinco {
-        background-size: 40%;
-        max-width: 281.2px;
-    }
-
-}
-/***************************************************Fin de CUARTA SECCION INDEX: FORMA DE TRABAJO(mobile)***************************************************/
-
-/***************************************************CUARTA SECCION INDEX: FORMA DE TRABAJO(Desktop)***************************************************/
-
-@media(min-width: 768px){
-    .cuarta_seccion_index {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        grid-template-areas: 
-        "cuarto_subtitulo cuarto_subtitulo cuarto_subtitulo"
-        "uno dos tres"
-        "cuatro . cinco"
-        ;
-        gap: 100px;
-    }
-
-    .cuarta_seccion_index .cuatro {
-        grid-column: 1 / span 2;
-    }
-
-    .cuarta_seccion_index .cinco {
-        grid-column: 2 / span 2;
-    }
-
-    .uno {
-        background-size: 8rem;
-        max-width: 281.2px;
+        grid-area: article--dos;
     }
     
-    .dos {
-        background-size: 8rem;
-        max-width: 281.2px;
+    .article--tres {
+        grid-area: article--tres;
+    }
+    
+    .article--cuatro {
+        grid-area: article--cuatro;
+    }
+    
+    .article--cinco {
+        grid-area: article--cinco;
     }
 
-    .tres {
-        background-size: 8rem;
-        max-width: 281.2px;
-    }
-
-    .cuatro {
-        background-size: 8rem;
-        max-width: 281.2px;
-    }
-
-    .cinco {
-        background-size: 8rem;
-        max-width: 281.2px;
+    .article--uno,
+    .article--dos,
+    .article--tres,
+    .article--cuatro,
+    .article--cinco {
+        padding: 6rem; 
+        margin: 1rem; 
+        background-color: #f9f9f9; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     }
 }
-
-/***************************************************Fin de CUARTA SECCION INDEX: FORMA DE TRABAJO(Desktop)***************************************************/
+/***************************************************Fin de CUARTA SECCION INDEX: METODO DE TRABAJO (Desktop)***************************************************/

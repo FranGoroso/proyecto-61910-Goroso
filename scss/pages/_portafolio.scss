@@ -93,3 +93,66 @@
 }
 
 /****************************************************Fin de SEGUNDA SECCION PORTFOLIO: TRABAJOS(Mobile)****************************************************/
+
+/****************************************************SEGUNDA SECCION PORTFOLIO: TRABAJOS (Desktop)****************************************************/
+@media (min-width: 1058px){
+    .seccion-uno-portfolio {
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .seccion-dos-portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+        background-color: antiquewhite;
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+    }
+
+    .seccion-dos-portfolio_div{ 
+        padding: 10px 25px 10px 25px;
+        background-color: #c2c2c2;
+        margin: 10px 25px 100px 25px;
+        border-radius: 5%;
+    }
+
+    .seccion-tres-portfolio_div {
+        padding: 10px 25px 10px 25px;
+        background-color: #c2c2c2;
+        margin: 10px 25px 100px 25px;
+        border-radius: 5%;
+    }
+
+    .seccion-cuatro-portfolio_div {
+        padding: 10px 25px 10px 25px;
+        background-color: #c2c2c2;
+        margin: 10px 25px 100px 25px;
+        border-radius: 5%;
+    }
+
+    .seccion-cinco-portfolio_div {
+        padding: 10px 25px 10px 25px;
+        background-color: #c2c2c2;
+        margin: 10px 25px 100px 25px;
+        border-radius: 5%;
+    }
+
+    .seccion-seis-portfolio_div {
+        padding: 10px 25px 10px 25px;
+        background-color: #c2c2c2;
+        margin: 10px 25px 100px 25px;
+        border-radius: 5%;
+    }
+
+}
+
+/****************************************************Fin de SEGUNDA SECCION PORTFOLIO: TRABAJOS (Desktop)****************************************************/
