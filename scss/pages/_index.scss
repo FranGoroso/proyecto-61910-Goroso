@@ -27,7 +27,6 @@
 }
 
 .button--portada { 
-    @extend .botones_generales;
     justify-content: center;
 } 
 /***************************************************Fin de PRIMERA SECCION INDEX: PORTADA(mobile)***************************************************/
@@ -120,7 +119,6 @@
 }
 
 .seccion-dos-index_button {
-    @extend .botones_generales;
     align-self: center;
     justify-content: center;
     width: 90%;
@@ -163,7 +161,7 @@
 /***************************************************TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Mobile)***************************************************/
 
 .seccion-tres-index {
-    background-color: rgb(218, 218, 218);
+    background-color: $color-complementario;
     height: 65vh;
 }
 
@@ -259,6 +257,13 @@
     background-color: #f9f9f9; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+    h3 {
+        color: $color-fondo;
+    }
+    p {
+        color: $color-fondo;
+    }
 }
 
 .article--uno {

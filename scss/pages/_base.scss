@@ -1,3 +1,29 @@
+/*--------------VARIABLES GLOBALES--------------*/
+// Colores
+$color-primario: #ff6600;
+$color-secundario: #ffcc00;
+$color-texto: #f5f5f5;
+$color-complementario: #333333;
+$color-fondo: #1a1a1a;
+
+// Tipografías
+$fuente-primaria: 'Montserrat', sans-serif;
+$fuente-secundaria: 'Lora', serif;
+$fuente-tamaño-base: 16px;
+$fuente-tamaño-largo: 2rem;
+$fuente-tamaño-chico: 0.875rem;
+
+// Espaciados
+$espaciado-chico: 8px;
+$espaciado-medio: 16px;
+$espaciado-grande: 32px;
+
+// Otros
+$radio-de-borde: 10px;
+$sombras: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+/*--------------Fin de VARIABLES GLOBALES--------------*/
+
 /*--------------RESETEO MANUAL DE CSS--------------*/ 
 
 * {
@@ -12,6 +38,7 @@ ul, ol {
 
 a {
     text-decoration: none;
+    color: $color-texto;
 }
 
 img {
@@ -19,14 +46,11 @@ img {
 }
 /*--------------FIN de reseteo manual de css--------------*/
 
+
+
 /*--------------CLASES PARA PERSONALIZACION--------------*/
 
-.botones_generales {
-    height: 2rem;
-    width: 7rem;
-    border-radius: 10px;
-    align-self: center;
-}
+
 
 .seccion_centrada {
     max-width: 1200px;
@@ -65,3 +89,31 @@ img {
     align-items: center;
 }
 /*--------------Fin de CLASES PARA PERSONALIZACION--------------*/
+
+/*ESTILO GENERAL DEL SITIO*/
+
+body {
+    background-color: $color-fondo;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-texto;
+    font-family: $fuente-primaria;
+}
+
+p {
+    color: $color-texto;
+    font-family: $fuente-secundaria;
+    font-size: 15px;
+}
+
+button {
+    height: 2rem;
+    width: 7rem;
+    border-radius: $radio-de-borde;
+    align-self: center;
+    background-color: $color-primario;
+    color: #fff;
+    box-shadow: $sombras;
+}
+

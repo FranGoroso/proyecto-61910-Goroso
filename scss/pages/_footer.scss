@@ -3,7 +3,7 @@
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: grey;
+    background-color: $color-primario;
     height: 30vh;
     justify-content: center;
     align-items: center;
@@ -25,6 +25,10 @@
 .div--iconos {
     display: flex;
     gap: 4vw;
+}
+
+.footer_button {
+    background-color: $color-secundario;
 }
 
 /****************************************************Fin de FOOTER RESPONSIVE****************************************************/

@@ -1,13 +1,11 @@
 //*IMPORTAR BASE*//
-
 @import './base';
 
-//*IMPORTAR INDEX*//
-
-@import '../pages/index';
-
 //*IMPORTAR FOOTER*//
-@import '../components/footer';
+@import './footer';
+
+//*IMPORTAR INDEX*//
+@import '../pages/index';
 
 //*IMPORTAR SOBRE MI*//
 @import '../pages/sobre_mi';
