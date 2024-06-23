@@ -226,30 +226,40 @@ ol {
   text-align: center;
   padding: 2rem;
   text-transform: uppercase;
-  grid-area: segundo_subtitulo;
+  grid-area: seccion-dos-index_h2;
 }
 
 .seccion-dos-index_p {
   text-align: justify;
   padding: 1rem;
-  grid-area: segundo_parrafo;
+  grid-area: seccion-dos-index_p;
 }
 
 .seccion-dos-index_button {
+  display: flex;
+  flex-direction: row;
   align-self: center;
   justify-content: center;
   width: 90%;
-  grid-area: video;
+  grid-area: seccion-dos-index_button;
+}
+
+.seccion-dos-index_a_button {
+  align-self: center;
+  justify-content: center;
 }
 
 .button--grid {
   margin-bottom: 3rem;
   grid-area: button_video;
   width: auto;
+  align-self: center;
+  justify-content: center;
 }
 
 .video {
   width: 98%;
+  grid-area: video;
 }
 
 /***************************************************Fin de SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(mobile)***************************************************/
@@ -259,7 +269,7 @@ ol {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 2fr 0.5fr;
-    grid-template-areas: "segundo_subtitulo segundo_subtitulo" "segundo_parrafo video" ". button_video";
+    grid-template-areas: "seccion-dos-index_h2 seccion-dos-index_h2" "seccion-dos-index_p video" ". button_video";
   }
   .video {
     margin: 0px;
