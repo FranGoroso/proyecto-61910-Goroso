@@ -12,7 +12,8 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    
+    padding: 30px;
+    background-color: $color-complementario;
 }
 
 .seccion-dos_contacto_form_div--nombre {
@@ -56,6 +57,26 @@
 .casilla_de_marcado {
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+.seccion-dos_contacto_form_div--nombre{
+    color: white;
+}
+
+.seccion-dos_contacto_form_div--correo{
+    color: white;
+}
+
+.seccion-dos_contacto_form_div--asunto{
+    color: white;
+}
+
+.seccion-dos_contacto_form_div--texto{
+    color: white;
+}
+
+.seccion-dos_contacto_form_div--novedades{
+    color: white;
 }
 
 /****************************************************Fin de PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Mobile)****************************************************/

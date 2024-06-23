@@ -108,7 +108,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 3rem;
-        background-color: antiquewhite;
         max-width: 1200px;
         margin-right: auto;
         margin-left: auto;
@@ -120,39 +119,78 @@
 
     .seccion-dos-portfolio_div{ 
         padding: 10px 25px 10px 25px;
-        background-color: #c2c2c2;
+        background-color: white;
         margin: 10px 25px 100px 25px;
         border-radius: 5%;
     }
 
     .seccion-tres-portfolio_div {
         padding: 10px 25px 10px 25px;
-        background-color: #c2c2c2;
+        background-color: white;
         margin: 10px 25px 100px 25px;
         border-radius: 5%;
     }
 
     .seccion-cuatro-portfolio_div {
         padding: 10px 25px 10px 25px;
-        background-color: #c2c2c2;
+        background-color: white;
         margin: 10px 25px 100px 25px;
         border-radius: 5%;
     }
 
     .seccion-cinco-portfolio_div {
         padding: 10px 25px 10px 25px;
-        background-color: #c2c2c2;
+        background-color: white;
         margin: 10px 25px 100px 25px;
         border-radius: 5%;
     }
 
     .seccion-seis-portfolio_div {
         padding: 10px 25px 10px 25px;
-        background-color: #c2c2c2;
+        background-color: white;
         margin: 10px 25px 100px 25px;
         border-radius: 5%;
     }
 
+    .seccion-dos-portfolio_h2 {
+        color: black;
+        text-shadow: none;
+    }
+    .seccion-dos-portfolio_p{
+        color: black;
+    }
+
+    .seccion-tres-portfolio_div_h2 {
+        color: black;
+        text-shadow: none;
+    }
+    .seccion-tres-portfolio_div_p{
+        color: black;
+    }
+
+    .seccion-cuatro-portfolio_div_h2 {
+        color: black;
+        text-shadow: none;
+    }
+    .seccion-cuatro-portfolio_div_p{
+        color: black;
+    }
+
+    .seccion-cinco-portfolio_div_h2 {
+        color: black;
+        text-shadow: none;
+    }
+    .seccion-cinco-portfolio_div_p{
+        color: black;
+    }
+
+    .seccion-seis-portfolio_div_h2 {
+        color: black;
+        text-shadow: none;
+    }
+    .seccion-seis-portfolio_div_p{
+        color: black;
+    }
 }
 
 /****************************************************Fin de SEGUNDA SECCION PORTFOLIO: TRABAJOS (Desktop)****************************************************/

@@ -54,6 +54,9 @@
     justify-content: center;
     text-align: center;
     padding-bottom: 2vh;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
  }
 
  .seccion-uno-sobre-mi_div_img_button {
@@ -64,6 +67,13 @@
     gap: 3vh;
  }
 
+ .seccion-uno-sobre-mi_h3{
+   text-transform: uppercase;
+   font-size: 1rem;
+   color: black;
+   text-shadow: 1px 1px orange;
+   background-color: white;
+ }
 
 /****************************************************Fin de PRIMERA SECCION SOBRE MI: PORTADA(Mobile)****************************************************/
 
@@ -79,10 +89,10 @@
    .lado--izquierdo {
       display: flex;
       flex-direction: column;
-      background-color: orange;
       height: 90vh;
       justify-content: center;
       align-items: center;
+      background-color: white;
    }
 
    .lado--derecho {
@@ -116,6 +126,13 @@
 
  .seccion-dos-sobre-mi_p {
     text-align: center;
+    color: black;
+    text-align: justify;
+    padding: 20px;
+ }
+
+ .seccion-dos-sobre-mi_h1 {
+   color: black;
  }
 
 /****************************************************Fin de SEGUNDA SECCION SOBRE MI: DESCRIPCION(Mobile)****************************************************/

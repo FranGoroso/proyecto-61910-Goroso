@@ -517,6 +517,9 @@ button {
   justify-content: center;
   text-align: center;
   padding-bottom: 2vh;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
 }
 
 .seccion-uno-sobre-mi_div_img_button {
@@ -525,6 +528,14 @@ button {
   justify-content: center;
   align-items: center;
   gap: 3vh;
+}
+
+.seccion-uno-sobre-mi_h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: black;
+  text-shadow: 1px 1px orange;
+  background-color: white;
 }
 
 /****************************************************Fin de PRIMERA SECCION SOBRE MI: PORTADA(Mobile)****************************************************/
@@ -539,10 +550,10 @@ button {
   .lado--izquierdo {
     display: flex;
     flex-direction: column;
-    background-color: orange;
     height: 90vh;
     justify-content: center;
     align-items: center;
+    background-color: white;
   }
   .lado--derecho {
     display: flex;
@@ -573,6 +584,13 @@ button {
 
 .seccion-dos-sobre-mi_p {
   text-align: center;
+  color: black;
+  text-align: justify;
+  padding: 20px;
+}
+
+.seccion-dos-sobre-mi_h1 {
+  color: black;
 }
 
 /****************************************************Fin de SEGUNDA SECCION SOBRE MI: DESCRIPCION(Mobile)****************************************************/
@@ -635,6 +653,7 @@ button {
 
 .seccion-dos_div_h2 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .seccion-dos_div_img {
@@ -643,6 +662,31 @@ button {
 
 .seccion-dos_div_p {
   text-align: center;
+}
+
+.seccion-uno_div {
+  background-color: white;
+}
+
+.seccion-uno_div_subtitulo {
+  color: black;
+}
+
+.seccion-uno_p {
+  color: black;
+}
+
+.seccion-dos_div_h2 {
+  color: black;
+  text-transform: uppercase;
+}
+
+.seccion-dos_div_p {
+  color: black;
+}
+
+.seccion-uno_div_subtitulo {
+  text-transform: uppercase;
 }
 
 /****************************************************Fin de SEGUNDA SECCION: SERVICIOS OFRECIDOS (Mobile)****************************************************/
@@ -674,6 +718,8 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  padding: 30px;
+  background-color: #333333;
 }
 
 .seccion-dos_contacto_form_div--nombre {
@@ -717,6 +763,26 @@ button {
 .casilla_de_marcado {
   margin-top: 5px;
   margin-bottom: 10px;
+}
+
+.seccion-dos_contacto_form_div--nombre {
+  color: white;
+}
+
+.seccion-dos_contacto_form_div--correo {
+  color: white;
+}
+
+.seccion-dos_contacto_form_div--asunto {
+  color: white;
+}
+
+.seccion-dos_contacto_form_div--texto {
+  color: white;
+}
+
+.seccion-dos_contacto_form_div--novedades {
+  color: white;
 }
 
 /****************************************************Fin de PRIMERA SECCION CONTACTO: TITULO Y FORMULARIO (Mobile)****************************************************/
@@ -919,7 +985,6 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
-    background-color: antiquewhite;
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
@@ -930,33 +995,68 @@ button {
   }
   .seccion-dos-portfolio_div {
     padding: 10px 25px 10px 25px;
-    background-color: #c2c2c2;
+    background-color: white;
     margin: 10px 25px 100px 25px;
     border-radius: 5%;
   }
   .seccion-tres-portfolio_div {
     padding: 10px 25px 10px 25px;
-    background-color: #c2c2c2;
+    background-color: white;
     margin: 10px 25px 100px 25px;
     border-radius: 5%;
   }
   .seccion-cuatro-portfolio_div {
     padding: 10px 25px 10px 25px;
-    background-color: #c2c2c2;
+    background-color: white;
     margin: 10px 25px 100px 25px;
     border-radius: 5%;
   }
   .seccion-cinco-portfolio_div {
     padding: 10px 25px 10px 25px;
-    background-color: #c2c2c2;
+    background-color: white;
     margin: 10px 25px 100px 25px;
     border-radius: 5%;
   }
   .seccion-seis-portfolio_div {
     padding: 10px 25px 10px 25px;
-    background-color: #c2c2c2;
+    background-color: white;
     margin: 10px 25px 100px 25px;
     border-radius: 5%;
+  }
+  .seccion-dos-portfolio_h2 {
+    color: black;
+    text-shadow: none;
+  }
+  .seccion-dos-portfolio_p {
+    color: black;
+  }
+  .seccion-tres-portfolio_div_h2 {
+    color: black;
+    text-shadow: none;
+  }
+  .seccion-tres-portfolio_div_p {
+    color: black;
+  }
+  .seccion-cuatro-portfolio_div_h2 {
+    color: black;
+    text-shadow: none;
+  }
+  .seccion-cuatro-portfolio_div_p {
+    color: black;
+  }
+  .seccion-cinco-portfolio_div_h2 {
+    color: black;
+    text-shadow: none;
+  }
+  .seccion-cinco-portfolio_div_p {
+    color: black;
+  }
+  .seccion-seis-portfolio_div_h2 {
+    color: black;
+    text-shadow: none;
+  }
+  .seccion-seis-portfolio_div_p {
+    color: black;
   }
 }
 /****************************************************Fin de SEGUNDA SECCION PORTFOLIO: TRABAJOS (Desktop)****************************************************/
