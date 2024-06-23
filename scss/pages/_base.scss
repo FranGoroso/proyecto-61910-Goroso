@@ -118,7 +118,6 @@ p {
     font-family: $fuente-secundaria;
     font-size: 15px;
     line-height: 2rem;
-
 }
 
 button {
@@ -131,3 +130,8 @@ button {
     box-shadow: $sombras;
 }
 
+ol {
+    font-family: $fuente-secundaria;
+    font-size: 15px;
+    text-align: justify;
+}
