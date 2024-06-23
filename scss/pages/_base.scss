@@ -101,10 +101,23 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $fuente-primaria;
 }
 
+h1 {
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 0.6rem;
+}
+
+h2 {
+    font-weight: 800;
+    text-shadow: 1px 1px 2px orange
+}
+
 p {
     color: $color-texto;
     font-family: $fuente-secundaria;
     font-size: 15px;
+    line-height: 2rem;
+
 }
 
 button {

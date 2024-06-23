@@ -113,8 +113,8 @@
 }
 
 .seccion-dos-index_p {
-    text-align: center;
-    padding: 1.3rem;
+    text-align: justify;
+    padding: 1rem;
     grid-area: segundo_parrafo;
 }
 
@@ -143,7 +143,7 @@
     .seccion-dos-index {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 3fr 0.5fr;
+        grid-template-rows: 1fr 2fr 0.5fr;
         grid-template-areas: 
         "segundo_subtitulo segundo_subtitulo"
         "segundo_parrafo video"
@@ -154,6 +154,15 @@
     .video {
         margin: 0px;
     }
+    
+    .seccion-dos-index_h2 {
+        padding-top:5vh;
+    }
+
+    .seccion-dos-index_p {
+        font-size: 1.2rem;
+    }
+
 }
 
 /***************************************************Fin de SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(Desktop)***************************************************/
@@ -176,14 +185,20 @@
 .seccion-tres-index_h2 {
     padding-top: 50px;
     padding-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .seccion-tres-index_div_tecnologias {
     @extend .grid_centrado;
     grid-template-columns: repeat(5, 1fr);
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.seccion-tres-index_p {
+    font-size: 1rem;
 }
 
 /***************************************************Fin de TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Mobile)***************************************************/
@@ -194,7 +209,7 @@
     .seccion-tres-index_div {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 9rem 30rem;
+        grid-template-rows: 9rem 20rem;
         height: auto;
         grid-template-areas: 
         "seccion-tres-index_h2 seccion-tres-index_h2"
@@ -220,6 +235,8 @@
 
     .seccion-tres-index_p {
         grid-area: seccion-tres-index_p;
+        text-align: justify;
+        font-size: 1.2rem;
     }
 
     .seccion-tres-index_h2 {
@@ -245,6 +262,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem; /* Espacio entre los artículos */
+    p {
+        text-align: center;
+    }
 }
 
 .article--uno, .article--dos, .article--tres, .article--cuatro, .article--cinco {
@@ -284,6 +304,22 @@
 
 .article--cinco {
     background-image: url(../../img/5-circle-fill.svg);
+}
+
+.seccion-cuatro-index_h2 {
+    text-align: center;
+}
+
+.article--uno,
+.article--dos,
+.article--tres,
+.article--cuatro,
+.article--cinco {
+    h3 {
+        color: $color-texto;
+        text-shadow: 1px 1px $color-primario;
+        text-align: center;
+    }
 }
 
 
@@ -331,6 +367,9 @@
     
     .article--cuatro {
         grid-area: article--cuatro;
+        h3 {
+            text-align: center;
+        }
     }
     
     .article--cinco {
@@ -347,6 +386,10 @@
         background-color: #f9f9f9; 
         border-radius: 10px; 
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        h3 {
+            color: $color-primario;
+            text-shadow: 2px 1px $color-fondo
+        }
     }
 }
 /***************************************************Fin de CUARTA SECCION INDEX: METODO DE TRABAJO (Desktop)***************************************************/
