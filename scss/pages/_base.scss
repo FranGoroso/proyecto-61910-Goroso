@@ -128,7 +128,13 @@ button {
     background-color: $color-primario;
     color: #fff;
     box-shadow: $sombras;
+    &:hover {
+        transform: scale(1.2);
+        background-color: #f5f5f5;
+        color: #ff6600;
+    }
 }
+
 
 ol {
     font-family: $fuente-secundaria;

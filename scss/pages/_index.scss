@@ -3,14 +3,28 @@
 .seccion-uno-index {
     @extend .flex_column;
     padding: 2rem;
-    background-image: url(../img/persona_programando.jpg);
+    position: relative;
     background-size: cover;
     height: 60vh;
-    background-position: center;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../img/persona_programando.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: brightness(70%);
+        z-index: -1;
+        transition: filter 1s;
+    }
 }
 
 .seccion-uno-index_h1 {
@@ -143,6 +157,7 @@
 .video {
     width: 98%;
     grid-area: video;
+    border-radius: 5%;
 }
 /***************************************************Fin de SEGUNDA SECCION INDEX: VIDEO DE PRESENTACIÓN(mobile)***************************************************/
 
