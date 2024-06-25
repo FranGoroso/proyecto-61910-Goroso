@@ -44,10 +44,10 @@
 
 .seccion-uno_img {
     justify-content: center;
-}
-
-.seccion-uno_img {
     text-align: center;
+    &:hover {
+        opacity: 90%;
+    }
 }
 
 /*SERVICIO WORDPRESS (Mobile)*/
@@ -70,6 +70,9 @@
 
 .seccion-dos_div_img {
     justify-content: center;
+    &:hover {
+        opacity: 90%;
+    }
 }
 
 .seccion-dos_div_p {

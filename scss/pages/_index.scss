@@ -1,5 +1,4 @@
 /***************************************************PRIMERA SECCION INDEX: PORTADA (mobile)***************************************************/
-
 .seccion-uno-index {
     @extend .flex_column;
     padding: 2rem;
@@ -224,6 +223,42 @@
     font-size: 1rem;
 }
 
+.img-bootstrap {
+    border-radius: 100%;
+}
+
+.img-wordpress {
+    background-color: white;
+    border-radius: 100%;
+}
+
+.tecno-ico {
+    animation-name: animacion-tecno-ico;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion-tecno-ico{
+    40% {
+      transform: translateY(-40px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.img-html {
+    animation-delay: 0.1s;
+}
+.img-css {
+    animation-delay: 0.2s;
+}
+.img-bootstrap {
+    animation-delay: 0.3s;
+}
+.img-wordpress {
+    animation-delay: 0.4s;
+}
 /***************************************************Fin de TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Mobile)***************************************************/
 
 /***************************************************TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Desktop)***************************************************/
@@ -285,12 +320,6 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem; /* Espacio entre los artículos */
-    p {
-        text-align: center;
-    }
-}
-
-.article--uno, .article--dos, .article--tres, .article--cuatro, .article--cinco {
     width: 100%; 
     background-position: center;
     background-repeat: no-repeat;
@@ -300,14 +329,15 @@
     background-color: #f9f9f9; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    
+    p {
+        text-align: center;
+        color: $color-fondo;
+    }
     h3 {
         color: $color-fondo;
     }
-    p {
-        color: $color-fondo;
-    }
 }
+
 
 .article--uno {
     background-image: url(../../img/1-circle-fill.svg);
@@ -327,6 +357,15 @@
 
 .article--cinco {
     background-image: url(../../img/5-circle-fill.svg);
+    animation-name: animacion-forma-trabajo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion-forma-trabajo {
+    50% {
+        scale: 1.01;
+    }
 }
 
 .seccion-cuatro-index_h2 {

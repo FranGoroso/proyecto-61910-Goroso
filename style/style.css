@@ -64,6 +64,22 @@ body {
   align-items: center;
 }
 
+.botones_generales, .seccion-dos_contacto_form_div_input_button, button {
+  height: 2rem;
+  width: 7rem;
+  border-radius: 10px;
+  align-self: center;
+  background-color: #ff6600;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.5s;
+}
+.botones_generales:hover, .seccion-dos_contacto_form_div_input_button:hover, button:hover {
+  transform: scale(1.2) !important;
+  background-color: #f5f5f5 !important;
+  color: #ff6600 !important;
+}
+
 /*--------------Fin de CLASES PARA PERSONALIZACION--------------*/
 /*ESTILO GENERAL DEL SITIO*/
 body {
@@ -93,25 +109,14 @@ p {
   line-height: 2rem;
 }
 
-button {
-  height: 2rem;
-  width: 7rem;
-  border-radius: 10px;
-  align-self: center;
-  background-color: #ff6600;
-  color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-button:hover {
-  transform: scale(1.2);
-  background-color: #f5f5f5;
-  color: #ff6600;
-}
-
 ol {
   font-family: "Lora", serif;
   font-size: 15px;
   text-align: justify;
+}
+
+a:hover {
+  color: black;
 }
 
 /****************************************************FOOTER RESPONSIVE****************************************************/
@@ -332,6 +337,45 @@ ol {
   font-size: 1rem;
 }
 
+.img-bootstrap {
+  border-radius: 100%;
+}
+
+.img-wordpress {
+  background-color: white;
+  border-radius: 100%;
+}
+
+.tecno-ico {
+  animation-name: animacion-tecno-ico;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacion-tecno-ico {
+  40% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.img-html {
+  animation-delay: 0.1s;
+}
+
+.img-css {
+  animation-delay: 0.2s;
+}
+
+.img-bootstrap {
+  animation-delay: 0.3s;
+}
+
+.img-wordpress {
+  animation-delay: 0.4s;
+}
+
 /***************************************************Fin de TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Mobile)***************************************************/
 /***************************************************TERCERA SECCION INDEX: TECNOLOGÍAS QUE MANEJO(Desktop)***************************************************/
 @media (min-width: 768px) {
@@ -380,12 +424,6 @@ ol {
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem; /* Espacio entre los artículos */
-}
-.seccion-cuatro-index_article p {
-  text-align: center;
-}
-
-.article--uno, .article--dos, .article--tres, .article--cuatro, .article--cinco {
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -396,10 +434,11 @@ ol {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.article--uno h3, .article--dos h3, .article--tres h3, .article--cuatro h3, .article--cinco h3 {
+.seccion-cuatro-index_article p {
+  text-align: center;
   color: #1a1a1a;
 }
-.article--uno p, .article--dos p, .article--tres p, .article--cuatro p, .article--cinco p {
+.seccion-cuatro-index_article h3 {
   color: #1a1a1a;
 }
 
@@ -421,8 +460,16 @@ ol {
 
 .article--cinco {
   background-image: url(../../img/5-circle-fill.svg);
+  animation-name: animacion-forma-trabajo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
+@keyframes animacion-forma-trabajo {
+  50% {
+    scale: 1.01;
+  }
+}
 .seccion-cuatro-index_h2 {
   text-align: center;
 }
@@ -669,10 +716,10 @@ ol {
 
 .seccion-uno_img {
   justify-content: center;
-}
-
-.seccion-uno_img {
   text-align: center;
+}
+.seccion-uno_img:hover {
+  opacity: 90%;
 }
 
 /*SERVICIO WORDPRESS (Mobile)*/
@@ -694,6 +741,9 @@ ol {
 
 .seccion-dos_div_img {
   justify-content: center;
+}
+.seccion-dos_div_img:hover {
+  opacity: 90%;
 }
 
 .seccion-dos_div_p {
@@ -1106,5 +1156,15 @@ ol {
   }
 }
 /****************************************************Fin de SEGUNDA SECCION PORTFOLIO: TRABAJOS (Desktop)****************************************************/
+.nav-item a {
+  color: black;
+}
+.nav-item:hover {
+  background-color: #f7a839;
+  border-radius: 100px;
+}
+.nav-item:hover a {
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+.nav-item {
+    a {
+        color: black;
+    }
+    &:hover{
+        background-color: #f7a839;
+        border-radius: 100px;
+        a {
+            color: white;
+        }
+    }
+}
