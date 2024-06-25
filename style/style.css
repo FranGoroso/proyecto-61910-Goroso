@@ -21,6 +21,10 @@ img {
   max-width: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*--------------FIN de reseteo manual de css--------------*/
 /*--------------CLASES PARA PERSONALIZACION--------------*/
 .seccion_centrada, .seccion-tres-index_div {
