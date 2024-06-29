@@ -122,6 +122,10 @@
         background-color: white;
         margin: 10px 25px 100px 25px;
         border-radius: 5%;
+        &:hover {
+            animation-name: animacion-portfolio;
+            animation-duration: 2s;
+        }
     }
 
     .seccion-tres-portfolio_div {
@@ -129,6 +133,10 @@
         background-color: white;
         margin: 10px 25px 100px 25px;
         border-radius: 5%;
+        &:hover {
+            animation-name: animacion-portfolio;
+            animation-duration: 2s;
+        }
     }
 
     .seccion-cuatro-portfolio_div {
@@ -136,6 +144,10 @@
         background-color: white;
         margin: 10px 25px 100px 25px;
         border-radius: 5%;
+        &:hover {
+            animation-name: animacion-portfolio;
+            animation-duration: 2s;
+        }
     }
 
     .seccion-cinco-portfolio_div {
@@ -143,6 +155,10 @@
         background-color: white;
         margin: 10px 25px 100px 25px;
         border-radius: 5%;
+        &:hover {
+            animation-name: animacion-portfolio;
+            animation-duration: 2s;
+        }
     }
 
     .seccion-seis-portfolio_div {
@@ -150,7 +166,18 @@
         background-color: white;
         margin: 10px 25px 100px 25px;
         border-radius: 5%;
+        &:hover {
+            animation-name: animacion-portfolio;
+            animation-duration: 2s;
+        }
     }
+
+    @keyframes animacion-portfolio {
+        50% {
+            scale: 1.1;
+        }
+    }
+    
 
     .seccion-dos-portfolio_h2 {
         color: black;
